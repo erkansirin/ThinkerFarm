@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A5B8888BDEBCE798A4DC6BF /* Pods_ThinkerFarmExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC8F9EF05CA136D3F044B4B /* Pods_ThinkerFarmExample.framework */; };
+		D92F04E723673B3F00451479 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92F04E623673B3F00451479 /* AppDelegate.swift */; };
+		D92F04E923673B3F00451479 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92F04E823673B3F00451479 /* SceneDelegate.swift */; };
+		D92F04EB23673B3F00451479 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92F04EA23673B3F00451479 /* ViewController.swift */; };
+		D92F04EE23673B3F00451479 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92F04EC23673B3F00451479 /* Main.storyboard */; };
+		D92F04F023673B4200451479 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D92F04EF23673B4200451479 /* Assets.xcassets */; };
+		D92F04F323673B4200451479 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92F04F123673B4200451479 /* LaunchScreen.storyboard */; };
+		D92F04FE23673B4200451479 /* ThinkerFarmExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92F04FD23673B4200451479 /* ThinkerFarmExampleTests.swift */; };
+		D92F050923673B4200451479 /* ThinkerFarmExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92F050823673B4200451479 /* ThinkerFarmExampleUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D92F04FA23673B4200451479 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D92F04DB23673B3F00451479 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D92F04E223673B3F00451479;
+			remoteInfo = ThinkerFarmExample;
+		};
+		D92F050523673B4200451479 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D92F04DB23673B3F00451479 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D92F04E223673B3F00451479;
+			remoteInfo = ThinkerFarmExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4CBE3829F30D45452A48E36C /* Pods-ThinkerFarmExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkerFarmExample.debug.xcconfig"; path = "Target Support Files/Pods-ThinkerFarmExample/Pods-ThinkerFarmExample.debug.xcconfig"; sourceTree = "<group>"; };
+		6EC8F9EF05CA136D3F044B4B /* Pods_ThinkerFarmExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThinkerFarmExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8405C5225BAAEF3C22943C4F /* Pods-ThinkerFarmExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkerFarmExample.release.xcconfig"; path = "Target Support Files/Pods-ThinkerFarmExample/Pods-ThinkerFarmExample.release.xcconfig"; sourceTree = "<group>"; };
+		D92F04E323673B3F00451479 /* ThinkerFarmExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThinkerFarmExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D92F04E623673B3F00451479 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D92F04E823673B3F00451479 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D92F04EA23673B3F00451479 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D92F04ED23673B3F00451479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D92F04EF23673B4200451479 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D92F04F223673B4200451479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D92F04F423673B4200451479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D92F04F923673B4200451479 /* ThinkerFarmExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThinkerFarmExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D92F04FD23673B4200451479 /* ThinkerFarmExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThinkerFarmExampleTests.swift; sourceTree = "<group>"; };
+		D92F04FF23673B4200451479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D92F050423673B4200451479 /* ThinkerFarmExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThinkerFarmExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D92F050823673B4200451479 /* ThinkerFarmExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThinkerFarmExampleUITests.swift; sourceTree = "<group>"; };
+		D92F050A23673B4200451479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D92F04E023673B3F00451479 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A5B8888BDEBCE798A4DC6BF /* Pods_ThinkerFarmExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D92F04F623673B4200451479 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D92F050123673B4200451479 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		061180F2A141593ACADA8EBA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CBE3829F30D45452A48E36C /* Pods-ThinkerFarmExample.debug.xcconfig */,
+				8405C5225BAAEF3C22943C4F /* Pods-ThinkerFarmExample.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		8E5AF94DFBD3F7D9E6AEB9E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EC8F9EF05CA136D3F044B4B /* Pods_ThinkerFarmExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D92F04DA23673B3F00451479 = {
+			isa = PBXGroup;
+			children = (
+				D92F04E523673B3F00451479 /* ThinkerFarmExample */,
+				D92F04FC23673B4200451479 /* ThinkerFarmExampleTests */,
+				D92F050723673B4200451479 /* ThinkerFarmExampleUITests */,
+				D92F04E423673B3F00451479 /* Products */,
+				061180F2A141593ACADA8EBA /* Pods */,
+				8E5AF94DFBD3F7D9E6AEB9E1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D92F04E423673B3F00451479 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D92F04E323673B3F00451479 /* ThinkerFarmExample.app */,
+				D92F04F923673B4200451479 /* ThinkerFarmExampleTests.xctest */,
+				D92F050423673B4200451479 /* ThinkerFarmExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D92F04E523673B3F00451479 /* ThinkerFarmExample */ = {
+			isa = PBXGroup;
+			children = (
+				D92F04E623673B3F00451479 /* AppDelegate.swift */,
+				D92F04E823673B3F00451479 /* SceneDelegate.swift */,
+				D92F04EA23673B3F00451479 /* ViewController.swift */,
+				D92F04EC23673B3F00451479 /* Main.storyboard */,
+				D92F04EF23673B4200451479 /* Assets.xcassets */,
+				D92F04F123673B4200451479 /* LaunchScreen.storyboard */,
+				D92F04F423673B4200451479 /* Info.plist */,
+			);
+			path = ThinkerFarmExample;
+			sourceTree = "<group>";
+		};
+		D92F04FC23673B4200451479 /* ThinkerFarmExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				D92F04FD23673B4200451479 /* ThinkerFarmExampleTests.swift */,
+				D92F04FF23673B4200451479 /* Info.plist */,
+			);
+			path = ThinkerFarmExampleTests;
+			sourceTree = "<group>";
+		};
+		D92F050723673B4200451479 /* ThinkerFarmExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D92F050823673B4200451479 /* ThinkerFarmExampleUITests.swift */,
+				D92F050A23673B4200451479 /* Info.plist */,
+			);
+			path = ThinkerFarmExampleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D92F04E223673B3F00451479 /* ThinkerFarmExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D92F050D23673B4200451479 /* Build configuration list for PBXNativeTarget "ThinkerFarmExample" */;
+			buildPhases = (
+				D3CA609EF74ABEB08D2B36E9 /* [CP] Check Pods Manifest.lock */,
+				D92F04DF23673B3F00451479 /* Sources */,
+				D92F04E023673B3F00451479 /* Frameworks */,
+				D92F04E123673B3F00451479 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThinkerFarmExample;
+			productName = ThinkerFarmExample;
+			productReference = D92F04E323673B3F00451479 /* ThinkerFarmExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D92F04F823673B4200451479 /* ThinkerFarmExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D92F051023673B4200451479 /* Build configuration list for PBXNativeTarget "ThinkerFarmExampleTests" */;
+			buildPhases = (
+				D92F04F523673B4200451479 /* Sources */,
+				D92F04F623673B4200451479 /* Frameworks */,
+				D92F04F723673B4200451479 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D92F04FB23673B4200451479 /* PBXTargetDependency */,
+			);
+			name = ThinkerFarmExampleTests;
+			productName = ThinkerFarmExampleTests;
+			productReference = D92F04F923673B4200451479 /* ThinkerFarmExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D92F050323673B4200451479 /* ThinkerFarmExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D92F051323673B4200451479 /* Build configuration list for PBXNativeTarget "ThinkerFarmExampleUITests" */;
+			buildPhases = (
+				D92F050023673B4200451479 /* Sources */,
+				D92F050123673B4200451479 /* Frameworks */,
+				D92F050223673B4200451479 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D92F050623673B4200451479 /* PBXTargetDependency */,
+			);
+			name = ThinkerFarmExampleUITests;
+			productName = ThinkerFarmExampleUITests;
+			productReference = D92F050423673B4200451479 /* ThinkerFarmExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D92F04DB23673B3F00451479 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Erkan SIRIN";
+				TargetAttributes = {
+					D92F04E223673B3F00451479 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					D92F04F823673B4200451479 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = D92F04E223673B3F00451479;
+					};
+					D92F050323673B4200451479 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = D92F04E223673B3F00451479;
+					};
+				};
+			};
+			buildConfigurationList = D92F04DE23673B3F00451479 /* Build configuration list for PBXProject "ThinkerFarmExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D92F04DA23673B3F00451479;
+			productRefGroup = D92F04E423673B3F00451479 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D92F04E223673B3F00451479 /* ThinkerFarmExample */,
+				D92F04F823673B4200451479 /* ThinkerFarmExampleTests */,
+				D92F050323673B4200451479 /* ThinkerFarmExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D92F04E123673B3F00451479 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D92F04F323673B4200451479 /* LaunchScreen.storyboard in Resources */,
+				D92F04F023673B4200451479 /* Assets.xcassets in Resources */,
+				D92F04EE23673B3F00451479 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D92F04F723673B4200451479 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D92F050223673B4200451479 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D3CA609EF74ABEB08D2B36E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ThinkerFarmExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D92F04DF23673B3F00451479 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D92F04EB23673B3F00451479 /* ViewController.swift in Sources */,
+				D92F04E723673B3F00451479 /* AppDelegate.swift in Sources */,
+				D92F04E923673B3F00451479 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D92F04F523673B4200451479 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D92F04FE23673B4200451479 /* ThinkerFarmExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D92F050023673B4200451479 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D92F050923673B4200451479 /* ThinkerFarmExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D92F04FB23673B4200451479 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D92F04E223673B3F00451479 /* ThinkerFarmExample */;
+			targetProxy = D92F04FA23673B4200451479 /* PBXContainerItemProxy */;
+		};
+		D92F050623673B4200451479 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D92F04E223673B3F00451479 /* ThinkerFarmExample */;
+			targetProxy = D92F050523673B4200451479 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D92F04EC23673B3F00451479 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D92F04ED23673B3F00451479 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D92F04F123673B4200451479 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D92F04F223673B4200451479 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D92F050B23673B4200451479 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D92F050C23673B4200451479 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D92F050E23673B4200451479 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CBE3829F30D45452A48E36C /* Pods-ThinkerFarmExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3S6P2YEDXL;
+				INFOPLIST_FILE = ThinkerFarmExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Erkan-Sirin.ThinkerFarmExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D92F050F23673B4200451479 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8405C5225BAAEF3C22943C4F /* Pods-ThinkerFarmExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3S6P2YEDXL;
+				INFOPLIST_FILE = ThinkerFarmExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Erkan-Sirin.ThinkerFarmExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D92F051123673B4200451479 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3S6P2YEDXL;
+				INFOPLIST_FILE = ThinkerFarmExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Erkan-Sirin.ThinkerFarmExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThinkerFarmExample.app/ThinkerFarmExample";
+			};
+			name = Debug;
+		};
+		D92F051223673B4200451479 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3S6P2YEDXL;
+				INFOPLIST_FILE = ThinkerFarmExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Erkan-Sirin.ThinkerFarmExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThinkerFarmExample.app/ThinkerFarmExample";
+			};
+			name = Release;
+		};
+		D92F051423673B4200451479 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3S6P2YEDXL;
+				INFOPLIST_FILE = ThinkerFarmExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Erkan-Sirin.ThinkerFarmExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ThinkerFarmExample;
+			};
+			name = Debug;
+		};
+		D92F051523673B4200451479 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3S6P2YEDXL;
+				INFOPLIST_FILE = ThinkerFarmExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Erkan-Sirin.ThinkerFarmExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ThinkerFarmExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D92F04DE23673B3F00451479 /* Build configuration list for PBXProject "ThinkerFarmExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D92F050B23673B4200451479 /* Debug */,
+				D92F050C23673B4200451479 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D92F050D23673B4200451479 /* Build configuration list for PBXNativeTarget "ThinkerFarmExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D92F050E23673B4200451479 /* Debug */,
+				D92F050F23673B4200451479 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D92F051023673B4200451479 /* Build configuration list for PBXNativeTarget "ThinkerFarmExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D92F051123673B4200451479 /* Debug */,
+				D92F051223673B4200451479 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D92F051323673B4200451479 /* Build configuration list for PBXNativeTarget "ThinkerFarmExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D92F051423673B4200451479 /* Debug */,
+				D92F051523673B4200451479 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D92F04DB23673B3F00451479 /* Project object */;
+}
