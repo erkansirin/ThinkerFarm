@@ -7,53 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		723D359D702387D3B93BEAE1 /* libPods-ThinkerFarm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 598FB654C444240349328AF6 /* libPods-ThinkerFarm.a */; };
-		D92F055123676F7900451479 /* FaceRecognizerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F051823676F7700451479 /* FaceRecognizerDelegate.h */; };
-		D92F055223676F7900451479 /* TFFaceRecognition.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F051923676F7700451479 /* TFFaceRecognition.h */; };
-		D92F055323676F7900451479 /* OpenCVData.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F051A23676F7700451479 /* OpenCVData.h */; };
-		D92F055423676F7900451479 /* OpenCVData.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F051B23676F7700451479 /* OpenCVData.mm */; };
-		D92F055523676F7900451479 /* FaceRecognizerErrorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F051C23676F7700451479 /* FaceRecognizerErrorManager.h */; };
-		D92F055623676F7900451479 /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = D92F051D23676F7700451479 /* haarcascade_frontalface_alt2.xml */; };
-		D92F055723676F7900451479 /* FaceDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F051E23676F7700451479 /* FaceDetector.h */; };
-		D92F055823676F7900451479 /* FaceDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F051F23676F7700451479 /* FaceDetector.mm */; };
-		D92F055923676F7900451479 /* TFFaceRecognition.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F052023676F7700451479 /* TFFaceRecognition.mm */; };
-		D92F055A23676F7900451479 /* FaceRecognizerErrorManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F052123676F7700451479 /* FaceRecognizerErrorManager.mm */; };
-		D92F055B23676F7900451479 /* ObjectDetection.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F052323676F7700451479 /* ObjectDetection.h */; };
-		D92F055C23676F7900451479 /* ObjectDetection.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F052423676F7700451479 /* ObjectDetection.mm */; };
-		D92F055D23676F7900451479 /* Colorization.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F052623676F7700451479 /* Colorization.h */; };
-		D92F055E23676F7900451479 /* Colorization.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F052723676F7700451479 /* Colorization.mm */; };
-		D92F055F23676F7900451479 /* colorizecpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D92F052823676F7700451479 /* colorizecpp.cpp */; };
-		D92F056023676F7900451479 /* TFVoiceRecognition.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F052A23676F7800451479 /* TFVoiceRecognition.h */; };
-		D92F056123676F7900451479 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92F052B23676F7800451479 /* Test.swift */; };
-		D92F056223676F7900451479 /* TFSpeech.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F052C23676F7800451479 /* TFSpeech.h */; };
-		D92F056323676F7900451479 /* TFSpeechDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F052D23676F7800451479 /* TFSpeechDelegate.h */; };
-		D92F056423676F7900451479 /* TFVoiceRecognitionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F052E23676F7800451479 /* TFVoiceRecognitionDelegate.h */; };
-		D92F056523676F7900451479 /* TFVoiceRecognition.m in Sources */ = {isa = PBXBuildFile; fileRef = D92F052F23676F7800451479 /* TFVoiceRecognition.m */; };
-		D92F056623676F7900451479 /* TFSpeech.m in Sources */ = {isa = PBXBuildFile; fileRef = D92F053023676F7800451479 /* TFSpeech.m */; };
-		D92F056723676F7900451479 /* TFObjectDetection.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F053323676F7800451479 /* TFObjectDetection.h */; };
-		D92F056823676F7900451479 /* TFObjectDetection.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F053423676F7800451479 /* TFObjectDetection.mm */; };
-		D92F056923676F7900451479 /* TFObjectDetectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F053523676F7800451479 /* TFObjectDetectionDelegate.h */; };
-		D92F056A23676F7900451479 /* TFFaceRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F053823676F7800451479 /* TFFaceRecognizer.h */; };
-		D92F056B23676F7900451479 /* TFFaceRecognizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F053923676F7800451479 /* TFFaceRecognizer.mm */; };
-		D92F056C23676F7900451479 /* TFFaceRecognizerErrorManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F053A23676F7800451479 /* TFFaceRecognizerErrorManager.mm */; };
-		D92F056D23676F7900451479 /* TFFaceRecognizerErrorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F053B23676F7800451479 /* TFFaceRecognizerErrorManager.h */; };
-		D92F056E23676F7900451479 /* TFFaceRecognizerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F053C23676F7800451479 /* TFFaceRecognizerDelegate.h */; };
-		D92F056F23676F7900451479 /* TFFaceRecognizerLiveErrorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D92F053E23676F7800451479 /* TFFaceRecognizerLiveErrorManager.m */; };
-		D92F057023676F7900451479 /* TFFaceRecognizerLive.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F053F23676F7800451479 /* TFFaceRecognizerLive.mm */; };
-		D92F057123676F7900451479 /* TFFaceRecognizerLiveDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F054023676F7800451479 /* TFFaceRecognizerLiveDelegate.h */; };
-		D92F057223676F7900451479 /* TFFaceRecognizerLive.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F054123676F7800451479 /* TFFaceRecognizerLive.h */; };
-		D92F057323676F7900451479 /* TFFaceRecognizerLiveErrorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F054223676F7800451479 /* TFFaceRecognizerLiveErrorManager.h */; };
-		D92F057423676F7900451479 /* TFFaceTrainerErrorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F054523676F7800451479 /* TFFaceTrainerErrorManager.h */; };
-		D92F057523676F7900451479 /* TFFaceTrainerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F054623676F7800451479 /* TFFaceTrainerDelegate.h */; };
-		D92F057623676F7900451479 /* TFFaceTrainer.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F054723676F7800451479 /* TFFaceTrainer.mm */; };
-		D92F057723676F7900451479 /* TFFaceTrainer.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F054823676F7800451479 /* TFFaceTrainer.h */; };
-		D92F057823676F7900451479 /* TFFaceTrainerErrorManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F054923676F7800451479 /* TFFaceTrainerErrorManager.mm */; };
-		D92F057923676F7900451479 /* TFColorizationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F054B23676F7800451479 /* TFColorizationDelegate.h */; };
-		D92F057A23676F7900451479 /* TFColorization.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F054C23676F7800451479 /* TFColorization.mm */; };
-		D92F057B23676F7900451479 /* TFColorization.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F054D23676F7800451479 /* TFColorization.h */; };
 		D92F057C23676F7900451479 /* ThinkerFarm-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = D92F054E23676F7800451479 /* ThinkerFarm-Prefix.pch */; };
-		D92F057D23676F7900451479 /* ThinkerFarm.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F054F23676F7800451479 /* ThinkerFarm.h */; };
-		D92F057E23676F7900451479 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D92F055023676F7900451479 /* Info.plist */; };
+		D92F057D23676F7900451479 /* ThinkerFarm.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F054F23676F7800451479 /* ThinkerFarm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D92F05BA2367744100451479 /* ThinkerFarm.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F05802367744000451479 /* ThinkerFarm.h */; };
+		D92F05BB2367744100451479 /* FaceRecognizerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F05842367744000451479 /* FaceRecognizerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D92F05BC2367744100451479 /* TFFaceRecognition.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F05852367744000451479 /* TFFaceRecognition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D92F05BD2367744100451479 /* OpenCVData.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F05862367744000451479 /* OpenCVData.h */; };
+		D92F05BE2367744100451479 /* OpenCVData.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F05872367744000451479 /* OpenCVData.mm */; };
+		D92F05BF2367744100451479 /* FaceRecognizerErrorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F05882367744000451479 /* FaceRecognizerErrorManager.h */; };
+		D92F05C02367744100451479 /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = D92F05892367744000451479 /* haarcascade_frontalface_alt2.xml */; };
+		D92F05C12367744100451479 /* FaceDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F058A2367744000451479 /* FaceDetector.h */; };
+		D92F05C22367744100451479 /* FaceDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F058B2367744000451479 /* FaceDetector.mm */; };
+		D92F05C32367744100451479 /* TFFaceRecognition.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F058C2367744000451479 /* TFFaceRecognition.mm */; };
+		D92F05C42367744100451479 /* FaceRecognizerErrorManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F058D2367744000451479 /* FaceRecognizerErrorManager.mm */; };
+		D92F05C52367744100451479 /* ObjectDetection.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F058F2367744000451479 /* ObjectDetection.h */; };
+		D92F05C62367744100451479 /* ObjectDetection.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F05902367744000451479 /* ObjectDetection.mm */; };
+		D92F05C72367744100451479 /* Colorization.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F05922367744000451479 /* Colorization.h */; };
+		D92F05C82367744100451479 /* Colorization.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F05932367744000451479 /* Colorization.mm */; };
+		D92F05C92367744100451479 /* colorizecpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D92F05942367744000451479 /* colorizecpp.cpp */; };
+		D92F05CA2367744100451479 /* TFVoiceRecognition.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F05962367744000451479 /* TFVoiceRecognition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D92F05CB2367744100451479 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92F05972367744000451479 /* Test.swift */; };
+		D92F05CC2367744100451479 /* TFSpeech.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F05982367744000451479 /* TFSpeech.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D92F05CD2367744100451479 /* TFSpeechDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F05992367744000451479 /* TFSpeechDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D92F05CE2367744100451479 /* TFVoiceRecognitionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F059A2367744000451479 /* TFVoiceRecognitionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D92F05CF2367744100451479 /* TFVoiceRecognition.m in Sources */ = {isa = PBXBuildFile; fileRef = D92F059B2367744000451479 /* TFVoiceRecognition.m */; };
+		D92F05D02367744100451479 /* TFSpeech.m in Sources */ = {isa = PBXBuildFile; fileRef = D92F059C2367744000451479 /* TFSpeech.m */; };
+		D92F05D12367744100451479 /* TFObjectDetection.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F059F2367744000451479 /* TFObjectDetection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D92F05D22367744100451479 /* TFObjectDetection.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F05A02367744000451479 /* TFObjectDetection.mm */; };
+		D92F05D32367744100451479 /* TFObjectDetectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F05A12367744000451479 /* TFObjectDetectionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D92F05D42367744100451479 /* TFFaceRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F05A42367744000451479 /* TFFaceRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D92F05D52367744100451479 /* TFFaceRecognizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F05A52367744000451479 /* TFFaceRecognizer.mm */; };
+		D92F05D62367744100451479 /* TFFaceRecognizerErrorManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F05A62367744000451479 /* TFFaceRecognizerErrorManager.mm */; };
+		D92F05D72367744100451479 /* TFFaceRecognizerErrorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F05A72367744000451479 /* TFFaceRecognizerErrorManager.h */; };
+		D92F05D82367744100451479 /* TFFaceRecognizerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F05A82367744000451479 /* TFFaceRecognizerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D92F05D92367744100451479 /* TFFaceRecognizerLiveErrorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D92F05AA2367744000451479 /* TFFaceRecognizerLiveErrorManager.m */; };
+		D92F05DA2367744100451479 /* TFFaceRecognizerLive.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F05AB2367744000451479 /* TFFaceRecognizerLive.mm */; };
+		D92F05DB2367744100451479 /* TFFaceRecognizerLiveDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F05AC2367744000451479 /* TFFaceRecognizerLiveDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D92F05DC2367744100451479 /* TFFaceRecognizerLive.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F05AD2367744000451479 /* TFFaceRecognizerLive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D92F05DD2367744100451479 /* TFFaceRecognizerLiveErrorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F05AE2367744000451479 /* TFFaceRecognizerLiveErrorManager.h */; };
+		D92F05DE2367744100451479 /* TFFaceTrainerErrorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F05B02367744000451479 /* TFFaceTrainerErrorManager.h */; };
+		D92F05DF2367744100451479 /* TFFaceTrainerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F05B12367744000451479 /* TFFaceTrainerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D92F05E02367744100451479 /* TFFaceTrainer.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F05B22367744000451479 /* TFFaceTrainer.mm */; };
+		D92F05E12367744100451479 /* TFFaceTrainer.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F05B32367744000451479 /* TFFaceTrainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D92F05E22367744100451479 /* TFFaceTrainerErrorManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F05B42367744000451479 /* TFFaceTrainerErrorManager.mm */; };
+		D92F05E32367744100451479 /* TFColorizationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F05B62367744000451479 /* TFColorizationDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D92F05E42367744100451479 /* TFColorization.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F05B72367744000451479 /* TFColorization.mm */; };
+		D92F05E52367744100451479 /* TFColorization.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F05B82367744000451479 /* TFColorization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D931CDC021AEC41B00B64846 /* ThinkerFarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D931CDB621AEC41B00B64846 /* ThinkerFarm.framework */; };
 		D931CDC521AEC41B00B64846 /* ThinkerFarmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D931CDC421AEC41B00B64846 /* ThinkerFarmTests.m */; };
 		D931CE7921AECA2000B64846 /* liblibjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D931CE7721AECA2000B64846 /* liblibjpeg.a */; };
@@ -82,53 +81,56 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13A4EF3662CCCD1745BBC57D /* Pods-ThinkerFarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkerFarm.release.xcconfig"; path = "Target Support Files/Pods-ThinkerFarm/Pods-ThinkerFarm.release.xcconfig"; sourceTree = "<group>"; };
 		598FB654C444240349328AF6 /* libPods-ThinkerFarm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ThinkerFarm.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D92F051823676F7700451479 /* FaceRecognizerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceRecognizerDelegate.h; sourceTree = "<group>"; };
-		D92F051923676F7700451479 /* TFFaceRecognition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFaceRecognition.h; sourceTree = "<group>"; };
-		D92F051A23676F7700451479 /* OpenCVData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVData.h; sourceTree = "<group>"; };
-		D92F051B23676F7700451479 /* OpenCVData.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVData.mm; sourceTree = "<group>"; };
-		D92F051C23676F7700451479 /* FaceRecognizerErrorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceRecognizerErrorManager.h; sourceTree = "<group>"; };
-		D92F051D23676F7700451479 /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
-		D92F051E23676F7700451479 /* FaceDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetector.h; sourceTree = "<group>"; };
-		D92F051F23676F7700451479 /* FaceDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceDetector.mm; sourceTree = "<group>"; };
-		D92F052023676F7700451479 /* TFFaceRecognition.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TFFaceRecognition.mm; sourceTree = "<group>"; };
-		D92F052123676F7700451479 /* FaceRecognizerErrorManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceRecognizerErrorManager.mm; sourceTree = "<group>"; };
-		D92F052323676F7700451479 /* ObjectDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectDetection.h; sourceTree = "<group>"; };
-		D92F052423676F7700451479 /* ObjectDetection.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjectDetection.mm; sourceTree = "<group>"; };
-		D92F052623676F7700451479 /* Colorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colorization.h; sourceTree = "<group>"; };
-		D92F052723676F7700451479 /* Colorization.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Colorization.mm; sourceTree = "<group>"; };
-		D92F052823676F7700451479 /* colorizecpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = colorizecpp.cpp; sourceTree = "<group>"; };
-		D92F052A23676F7800451479 /* TFVoiceRecognition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFVoiceRecognition.h; sourceTree = "<group>"; };
-		D92F052B23676F7800451479 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
-		D92F052C23676F7800451479 /* TFSpeech.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFSpeech.h; sourceTree = "<group>"; };
-		D92F052D23676F7800451479 /* TFSpeechDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFSpeechDelegate.h; sourceTree = "<group>"; };
-		D92F052E23676F7800451479 /* TFVoiceRecognitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFVoiceRecognitionDelegate.h; sourceTree = "<group>"; };
-		D92F052F23676F7800451479 /* TFVoiceRecognition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFVoiceRecognition.m; sourceTree = "<group>"; };
-		D92F053023676F7800451479 /* TFSpeech.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFSpeech.m; sourceTree = "<group>"; };
-		D92F053323676F7800451479 /* TFObjectDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFObjectDetection.h; sourceTree = "<group>"; };
-		D92F053423676F7800451479 /* TFObjectDetection.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TFObjectDetection.mm; sourceTree = "<group>"; };
-		D92F053523676F7800451479 /* TFObjectDetectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFObjectDetectionDelegate.h; sourceTree = "<group>"; };
-		D92F053823676F7800451479 /* TFFaceRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFaceRecognizer.h; sourceTree = "<group>"; };
-		D92F053923676F7800451479 /* TFFaceRecognizer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TFFaceRecognizer.mm; sourceTree = "<group>"; };
-		D92F053A23676F7800451479 /* TFFaceRecognizerErrorManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TFFaceRecognizerErrorManager.mm; sourceTree = "<group>"; };
-		D92F053B23676F7800451479 /* TFFaceRecognizerErrorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFaceRecognizerErrorManager.h; sourceTree = "<group>"; };
-		D92F053C23676F7800451479 /* TFFaceRecognizerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFaceRecognizerDelegate.h; sourceTree = "<group>"; };
-		D92F053E23676F7800451479 /* TFFaceRecognizerLiveErrorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFFaceRecognizerLiveErrorManager.m; sourceTree = "<group>"; };
-		D92F053F23676F7800451479 /* TFFaceRecognizerLive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TFFaceRecognizerLive.mm; sourceTree = "<group>"; };
-		D92F054023676F7800451479 /* TFFaceRecognizerLiveDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFaceRecognizerLiveDelegate.h; sourceTree = "<group>"; };
-		D92F054123676F7800451479 /* TFFaceRecognizerLive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFaceRecognizerLive.h; sourceTree = "<group>"; };
-		D92F054223676F7800451479 /* TFFaceRecognizerLiveErrorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFaceRecognizerLiveErrorManager.h; sourceTree = "<group>"; };
-		D92F054523676F7800451479 /* TFFaceTrainerErrorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFaceTrainerErrorManager.h; sourceTree = "<group>"; };
-		D92F054623676F7800451479 /* TFFaceTrainerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFaceTrainerDelegate.h; sourceTree = "<group>"; };
-		D92F054723676F7800451479 /* TFFaceTrainer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TFFaceTrainer.mm; sourceTree = "<group>"; };
-		D92F054823676F7800451479 /* TFFaceTrainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFaceTrainer.h; sourceTree = "<group>"; };
-		D92F054923676F7800451479 /* TFFaceTrainerErrorManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TFFaceTrainerErrorManager.mm; sourceTree = "<group>"; };
-		D92F054B23676F7800451479 /* TFColorizationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFColorizationDelegate.h; sourceTree = "<group>"; };
-		D92F054C23676F7800451479 /* TFColorization.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TFColorization.mm; sourceTree = "<group>"; };
-		D92F054D23676F7800451479 /* TFColorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFColorization.h; sourceTree = "<group>"; };
+		CCA5EE657A2A4D87BC06C026 /* Pods-ThinkerFarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkerFarm.debug.xcconfig"; path = "Target Support Files/Pods-ThinkerFarm/Pods-ThinkerFarm.debug.xcconfig"; sourceTree = "<group>"; };
 		D92F054E23676F7800451479 /* ThinkerFarm-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ThinkerFarm-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		D92F054F23676F7800451479 /* ThinkerFarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThinkerFarm.h; sourceTree = SOURCE_ROOT; };
-		D92F055023676F7900451479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		D92F05802367744000451479 /* ThinkerFarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThinkerFarm.h; sourceTree = "<group>"; };
+		D92F05842367744000451479 /* FaceRecognizerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceRecognizerDelegate.h; sourceTree = "<group>"; };
+		D92F05852367744000451479 /* TFFaceRecognition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFaceRecognition.h; sourceTree = "<group>"; };
+		D92F05862367744000451479 /* OpenCVData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVData.h; sourceTree = "<group>"; };
+		D92F05872367744000451479 /* OpenCVData.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVData.mm; sourceTree = "<group>"; };
+		D92F05882367744000451479 /* FaceRecognizerErrorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceRecognizerErrorManager.h; sourceTree = "<group>"; };
+		D92F05892367744000451479 /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
+		D92F058A2367744000451479 /* FaceDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetector.h; sourceTree = "<group>"; };
+		D92F058B2367744000451479 /* FaceDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceDetector.mm; sourceTree = "<group>"; };
+		D92F058C2367744000451479 /* TFFaceRecognition.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TFFaceRecognition.mm; sourceTree = "<group>"; };
+		D92F058D2367744000451479 /* FaceRecognizerErrorManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceRecognizerErrorManager.mm; sourceTree = "<group>"; };
+		D92F058F2367744000451479 /* ObjectDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectDetection.h; sourceTree = "<group>"; };
+		D92F05902367744000451479 /* ObjectDetection.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjectDetection.mm; sourceTree = "<group>"; };
+		D92F05922367744000451479 /* Colorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colorization.h; sourceTree = "<group>"; };
+		D92F05932367744000451479 /* Colorization.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Colorization.mm; sourceTree = "<group>"; };
+		D92F05942367744000451479 /* colorizecpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = colorizecpp.cpp; sourceTree = "<group>"; };
+		D92F05962367744000451479 /* TFVoiceRecognition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFVoiceRecognition.h; sourceTree = "<group>"; };
+		D92F05972367744000451479 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		D92F05982367744000451479 /* TFSpeech.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFSpeech.h; sourceTree = "<group>"; };
+		D92F05992367744000451479 /* TFSpeechDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFSpeechDelegate.h; sourceTree = "<group>"; };
+		D92F059A2367744000451479 /* TFVoiceRecognitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFVoiceRecognitionDelegate.h; sourceTree = "<group>"; };
+		D92F059B2367744000451479 /* TFVoiceRecognition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFVoiceRecognition.m; sourceTree = "<group>"; };
+		D92F059C2367744000451479 /* TFSpeech.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFSpeech.m; sourceTree = "<group>"; };
+		D92F059F2367744000451479 /* TFObjectDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFObjectDetection.h; sourceTree = "<group>"; };
+		D92F05A02367744000451479 /* TFObjectDetection.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TFObjectDetection.mm; sourceTree = "<group>"; };
+		D92F05A12367744000451479 /* TFObjectDetectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFObjectDetectionDelegate.h; sourceTree = "<group>"; };
+		D92F05A42367744000451479 /* TFFaceRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFaceRecognizer.h; sourceTree = "<group>"; };
+		D92F05A52367744000451479 /* TFFaceRecognizer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TFFaceRecognizer.mm; sourceTree = "<group>"; };
+		D92F05A62367744000451479 /* TFFaceRecognizerErrorManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TFFaceRecognizerErrorManager.mm; sourceTree = "<group>"; };
+		D92F05A72367744000451479 /* TFFaceRecognizerErrorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFaceRecognizerErrorManager.h; sourceTree = "<group>"; };
+		D92F05A82367744000451479 /* TFFaceRecognizerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFaceRecognizerDelegate.h; sourceTree = "<group>"; };
+		D92F05AA2367744000451479 /* TFFaceRecognizerLiveErrorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFFaceRecognizerLiveErrorManager.m; sourceTree = "<group>"; };
+		D92F05AB2367744000451479 /* TFFaceRecognizerLive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TFFaceRecognizerLive.mm; sourceTree = "<group>"; };
+		D92F05AC2367744000451479 /* TFFaceRecognizerLiveDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFaceRecognizerLiveDelegate.h; sourceTree = "<group>"; };
+		D92F05AD2367744000451479 /* TFFaceRecognizerLive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFaceRecognizerLive.h; sourceTree = "<group>"; };
+		D92F05AE2367744000451479 /* TFFaceRecognizerLiveErrorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFaceRecognizerLiveErrorManager.h; sourceTree = "<group>"; };
+		D92F05B02367744000451479 /* TFFaceTrainerErrorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFaceTrainerErrorManager.h; sourceTree = "<group>"; };
+		D92F05B12367744000451479 /* TFFaceTrainerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFaceTrainerDelegate.h; sourceTree = "<group>"; };
+		D92F05B22367744000451479 /* TFFaceTrainer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TFFaceTrainer.mm; sourceTree = "<group>"; };
+		D92F05B32367744000451479 /* TFFaceTrainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFaceTrainer.h; sourceTree = "<group>"; };
+		D92F05B42367744000451479 /* TFFaceTrainerErrorManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TFFaceTrainerErrorManager.mm; sourceTree = "<group>"; };
+		D92F05B62367744000451479 /* TFColorizationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFColorizationDelegate.h; sourceTree = "<group>"; };
+		D92F05B72367744000451479 /* TFColorization.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TFColorization.mm; sourceTree = "<group>"; };
+		D92F05B82367744000451479 /* TFColorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFColorization.h; sourceTree = "<group>"; };
+		D92F05B92367744000451479 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D931CDB621AEC41B00B64846 /* ThinkerFarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThinkerFarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D931CDBF21AEC41B00B64846 /* ThinkerFarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThinkerFarmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D931CDC421AEC41B00B64846 /* ThinkerFarmTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThinkerFarmTests.m; sourceTree = "<group>"; };
@@ -166,7 +168,6 @@
 				D93F3A7A21AED1DA00682D03 /* libsqlite3.tbd in Frameworks */,
 				D931CE7921AECA2000B64846 /* liblibjpeg.a in Frameworks */,
 				D931CE7A21AECA2000B64846 /* opencv2.framework in Frameworks */,
-				723D359D702387D3B93BEAE1 /* libPods-ThinkerFarm.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,146 +182,168 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D92F051623676F7700451479 /* Tools */ = {
+		9E916F993027C83D19BA88A2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D92F051723676F7700451479 /* FaceRecognition */,
-				D92F052223676F7700451479 /* ObjectDetection */,
-				D92F052523676F7700451479 /* Colorization */,
+				CCA5EE657A2A4D87BC06C026 /* Pods-ThinkerFarm.debug.xcconfig */,
+				13A4EF3662CCCD1745BBC57D /* Pods-ThinkerFarm.release.xcconfig */,
 			);
-			path = Tools;
-			sourceTree = SOURCE_ROOT;
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
 		};
-		D92F051723676F7700451479 /* FaceRecognition */ = {
+		D92F057F2367744000451479 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				D92F051823676F7700451479 /* FaceRecognizerDelegate.h */,
-				D92F051923676F7700451479 /* TFFaceRecognition.h */,
-				D92F051A23676F7700451479 /* OpenCVData.h */,
-				D92F051B23676F7700451479 /* OpenCVData.mm */,
-				D92F051C23676F7700451479 /* FaceRecognizerErrorManager.h */,
-				D92F051D23676F7700451479 /* haarcascade_frontalface_alt2.xml */,
-				D92F051E23676F7700451479 /* FaceDetector.h */,
-				D92F051F23676F7700451479 /* FaceDetector.mm */,
-				D92F052023676F7700451479 /* TFFaceRecognition.mm */,
-				D92F052123676F7700451479 /* FaceRecognizerErrorManager.mm */,
+				D92F05802367744000451479 /* ThinkerFarm.h */,
+				D92F05812367744000451479 /* Modules */,
+				D92F05B92367744000451479 /* Info.plist */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D92F05812367744000451479 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D92F05822367744000451479 /* Wrappers */,
+				D92F05952367744000451479 /* TFVoiceEngine */,
+				D92F059D2367744000451479 /* TFVisionEngine */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D92F05822367744000451479 /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				D92F05832367744000451479 /* FaceRecognition */,
+				D92F058E2367744000451479 /* ObjectDetection */,
+				D92F05912367744000451479 /* Colorization */,
+			);
+			path = Wrappers;
+			sourceTree = "<group>";
+		};
+		D92F05832367744000451479 /* FaceRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				D92F05842367744000451479 /* FaceRecognizerDelegate.h */,
+				D92F05852367744000451479 /* TFFaceRecognition.h */,
+				D92F05862367744000451479 /* OpenCVData.h */,
+				D92F05872367744000451479 /* OpenCVData.mm */,
+				D92F05882367744000451479 /* FaceRecognizerErrorManager.h */,
+				D92F05892367744000451479 /* haarcascade_frontalface_alt2.xml */,
+				D92F058A2367744000451479 /* FaceDetector.h */,
+				D92F058B2367744000451479 /* FaceDetector.mm */,
+				D92F058C2367744000451479 /* TFFaceRecognition.mm */,
+				D92F058D2367744000451479 /* FaceRecognizerErrorManager.mm */,
 			);
 			path = FaceRecognition;
 			sourceTree = "<group>";
 		};
-		D92F052223676F7700451479 /* ObjectDetection */ = {
+		D92F058E2367744000451479 /* ObjectDetection */ = {
 			isa = PBXGroup;
 			children = (
-				D92F052323676F7700451479 /* ObjectDetection.h */,
-				D92F052423676F7700451479 /* ObjectDetection.mm */,
+				D92F058F2367744000451479 /* ObjectDetection.h */,
+				D92F05902367744000451479 /* ObjectDetection.mm */,
 			);
 			path = ObjectDetection;
 			sourceTree = "<group>";
 		};
-		D92F052523676F7700451479 /* Colorization */ = {
+		D92F05912367744000451479 /* Colorization */ = {
 			isa = PBXGroup;
 			children = (
-				D92F052623676F7700451479 /* Colorization.h */,
-				D92F052723676F7700451479 /* Colorization.mm */,
-				D92F052823676F7700451479 /* colorizecpp.cpp */,
+				D92F05922367744000451479 /* Colorization.h */,
+				D92F05932367744000451479 /* Colorization.mm */,
+				D92F05942367744000451479 /* colorizecpp.cpp */,
 			);
 			path = Colorization;
 			sourceTree = "<group>";
 		};
-		D92F052923676F7800451479 /* TFVoiceEngine */ = {
+		D92F05952367744000451479 /* TFVoiceEngine */ = {
 			isa = PBXGroup;
 			children = (
-				D92F052A23676F7800451479 /* TFVoiceRecognition.h */,
-				D92F052B23676F7800451479 /* Test.swift */,
-				D92F052C23676F7800451479 /* TFSpeech.h */,
-				D92F052D23676F7800451479 /* TFSpeechDelegate.h */,
-				D92F052E23676F7800451479 /* TFVoiceRecognitionDelegate.h */,
-				D92F052F23676F7800451479 /* TFVoiceRecognition.m */,
-				D92F053023676F7800451479 /* TFSpeech.m */,
+				D92F05962367744000451479 /* TFVoiceRecognition.h */,
+				D92F05972367744000451479 /* Test.swift */,
+				D92F05982367744000451479 /* TFSpeech.h */,
+				D92F05992367744000451479 /* TFSpeechDelegate.h */,
+				D92F059A2367744000451479 /* TFVoiceRecognitionDelegate.h */,
+				D92F059B2367744000451479 /* TFVoiceRecognition.m */,
+				D92F059C2367744000451479 /* TFSpeech.m */,
 			);
 			path = TFVoiceEngine;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
-		D92F053123676F7800451479 /* TFVisionEngine */ = {
+		D92F059D2367744000451479 /* TFVisionEngine */ = {
 			isa = PBXGroup;
 			children = (
-				D92F053223676F7800451479 /* TFObjectDetection */,
-				D92F053623676F7800451479 /* FaceRecognition */,
-				D92F054A23676F7800451479 /* TFColorization */,
+				D92F059E2367744000451479 /* TFObjectDetection */,
+				D92F05A22367744000451479 /* FaceRecognition */,
+				D92F05B52367744000451479 /* TFColorization */,
 			);
 			path = TFVisionEngine;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
-		D92F053223676F7800451479 /* TFObjectDetection */ = {
+		D92F059E2367744000451479 /* TFObjectDetection */ = {
 			isa = PBXGroup;
 			children = (
-				D92F053323676F7800451479 /* TFObjectDetection.h */,
-				D92F053423676F7800451479 /* TFObjectDetection.mm */,
-				D92F053523676F7800451479 /* TFObjectDetectionDelegate.h */,
+				D92F059F2367744000451479 /* TFObjectDetection.h */,
+				D92F05A02367744000451479 /* TFObjectDetection.mm */,
+				D92F05A12367744000451479 /* TFObjectDetectionDelegate.h */,
 			);
 			path = TFObjectDetection;
 			sourceTree = "<group>";
 		};
-		D92F053623676F7800451479 /* FaceRecognition */ = {
+		D92F05A22367744000451479 /* FaceRecognition */ = {
 			isa = PBXGroup;
 			children = (
-				D92F053723676F7800451479 /* TFFaceRecognizer */,
-				D92F053D23676F7800451479 /* TFFaceRecognizerLive */,
-				D92F054323676F7800451479 /* TFFaceTrainerLive */,
-				D92F054423676F7800451479 /* TFFaceTrainer */,
+				D92F05A32367744000451479 /* TFFaceRecognizer */,
+				D92F05A92367744000451479 /* TFFaceRecognizerLive */,
+				D92F05AF2367744000451479 /* TFFaceTrainer */,
 			);
 			path = FaceRecognition;
 			sourceTree = "<group>";
 		};
-		D92F053723676F7800451479 /* TFFaceRecognizer */ = {
+		D92F05A32367744000451479 /* TFFaceRecognizer */ = {
 			isa = PBXGroup;
 			children = (
-				D92F053823676F7800451479 /* TFFaceRecognizer.h */,
-				D92F053923676F7800451479 /* TFFaceRecognizer.mm */,
-				D92F053A23676F7800451479 /* TFFaceRecognizerErrorManager.mm */,
-				D92F053B23676F7800451479 /* TFFaceRecognizerErrorManager.h */,
-				D92F053C23676F7800451479 /* TFFaceRecognizerDelegate.h */,
+				D92F05A42367744000451479 /* TFFaceRecognizer.h */,
+				D92F05A52367744000451479 /* TFFaceRecognizer.mm */,
+				D92F05A62367744000451479 /* TFFaceRecognizerErrorManager.mm */,
+				D92F05A72367744000451479 /* TFFaceRecognizerErrorManager.h */,
+				D92F05A82367744000451479 /* TFFaceRecognizerDelegate.h */,
 			);
 			path = TFFaceRecognizer;
 			sourceTree = "<group>";
 		};
-		D92F053D23676F7800451479 /* TFFaceRecognizerLive */ = {
+		D92F05A92367744000451479 /* TFFaceRecognizerLive */ = {
 			isa = PBXGroup;
 			children = (
-				D92F053E23676F7800451479 /* TFFaceRecognizerLiveErrorManager.m */,
-				D92F053F23676F7800451479 /* TFFaceRecognizerLive.mm */,
-				D92F054023676F7800451479 /* TFFaceRecognizerLiveDelegate.h */,
-				D92F054123676F7800451479 /* TFFaceRecognizerLive.h */,
-				D92F054223676F7800451479 /* TFFaceRecognizerLiveErrorManager.h */,
+				D92F05AA2367744000451479 /* TFFaceRecognizerLiveErrorManager.m */,
+				D92F05AB2367744000451479 /* TFFaceRecognizerLive.mm */,
+				D92F05AC2367744000451479 /* TFFaceRecognizerLiveDelegate.h */,
+				D92F05AD2367744000451479 /* TFFaceRecognizerLive.h */,
+				D92F05AE2367744000451479 /* TFFaceRecognizerLiveErrorManager.h */,
 			);
 			path = TFFaceRecognizerLive;
 			sourceTree = "<group>";
 		};
-		D92F054323676F7800451479 /* TFFaceTrainerLive */ = {
+		D92F05AF2367744000451479 /* TFFaceTrainer */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = TFFaceTrainerLive;
-			sourceTree = "<group>";
-		};
-		D92F054423676F7800451479 /* TFFaceTrainer */ = {
-			isa = PBXGroup;
-			children = (
-				D92F054523676F7800451479 /* TFFaceTrainerErrorManager.h */,
-				D92F054623676F7800451479 /* TFFaceTrainerDelegate.h */,
-				D92F054723676F7800451479 /* TFFaceTrainer.mm */,
-				D92F054823676F7800451479 /* TFFaceTrainer.h */,
-				D92F054923676F7800451479 /* TFFaceTrainerErrorManager.mm */,
+				D92F05B02367744000451479 /* TFFaceTrainerErrorManager.h */,
+				D92F05B12367744000451479 /* TFFaceTrainerDelegate.h */,
+				D92F05B22367744000451479 /* TFFaceTrainer.mm */,
+				D92F05B32367744000451479 /* TFFaceTrainer.h */,
+				D92F05B42367744000451479 /* TFFaceTrainerErrorManager.mm */,
 			);
 			path = TFFaceTrainer;
 			sourceTree = "<group>";
 		};
-		D92F054A23676F7800451479 /* TFColorization */ = {
+		D92F05B52367744000451479 /* TFColorization */ = {
 			isa = PBXGroup;
 			children = (
-				D92F054B23676F7800451479 /* TFColorizationDelegate.h */,
-				D92F054C23676F7800451479 /* TFColorization.mm */,
-				D92F054D23676F7800451479 /* TFColorization.h */,
+				D92F05B62367744000451479 /* TFColorizationDelegate.h */,
+				D92F05B72367744000451479 /* TFColorization.mm */,
+				D92F05B82367744000451479 /* TFColorization.h */,
 			);
 			path = TFColorization;
 			sourceTree = "<group>";
@@ -328,10 +351,13 @@
 		D931CDAC21AEC41B00B64846 = {
 			isa = PBXGroup;
 			children = (
-				D931CDB821AEC41B00B64846 /* ThinkerFarm */,
+				D92F057F2367744000451479 /* Core */,
+				D92F054E23676F7800451479 /* ThinkerFarm-Prefix.pch */,
+				D92F054F23676F7800451479 /* ThinkerFarm.h */,
 				D931CDC321AEC41B00B64846 /* ThinkerFarmTests */,
 				D931CDB721AEC41B00B64846 /* Products */,
 				D931CE7121AEC75C00B64846 /* Frameworks */,
+				9E916F993027C83D19BA88A2 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -342,19 +368,6 @@
 				D931CDBF21AEC41B00B64846 /* ThinkerFarmTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D931CDB821AEC41B00B64846 /* ThinkerFarm */ = {
-			isa = PBXGroup;
-			children = (
-				D92F055023676F7900451479 /* Info.plist */,
-				D92F053123676F7800451479 /* TFVisionEngine */,
-				D92F052923676F7800451479 /* TFVoiceEngine */,
-				D92F054E23676F7800451479 /* ThinkerFarm-Prefix.pch */,
-				D92F054F23676F7800451479 /* ThinkerFarm.h */,
-				D92F051623676F7700451479 /* Tools */,
-			);
-			path = ThinkerFarm;
 			sourceTree = "<group>";
 		};
 		D931CDC321AEC41B00B64846 /* ThinkerFarmTests */ = {
@@ -394,32 +407,33 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D92F057923676F7900451479 /* TFColorizationDelegate.h in Headers */,
-				D92F056923676F7900451479 /* TFObjectDetectionDelegate.h in Headers */,
-				D92F055123676F7900451479 /* FaceRecognizerDelegate.h in Headers */,
-				D92F057523676F7900451479 /* TFFaceTrainerDelegate.h in Headers */,
-				D92F057723676F7900451479 /* TFFaceTrainer.h in Headers */,
-				D92F057B23676F7900451479 /* TFColorization.h in Headers */,
-				D92F056223676F7900451479 /* TFSpeech.h in Headers */,
-				D92F057C23676F7900451479 /* ThinkerFarm-Prefix.pch in Headers */,
-				D92F056D23676F7900451479 /* TFFaceRecognizerErrorManager.h in Headers */,
-				D92F056A23676F7900451479 /* TFFaceRecognizer.h in Headers */,
-				D92F055223676F7900451479 /* TFFaceRecognition.h in Headers */,
-				D92F055523676F7900451479 /* FaceRecognizerErrorManager.h in Headers */,
-				D92F056023676F7900451479 /* TFVoiceRecognition.h in Headers */,
-				D92F055B23676F7900451479 /* ObjectDetection.h in Headers */,
 				D92F057D23676F7900451479 /* ThinkerFarm.h in Headers */,
-				D92F055323676F7900451479 /* OpenCVData.h in Headers */,
-				D92F056423676F7900451479 /* TFVoiceRecognitionDelegate.h in Headers */,
-				D92F057323676F7900451479 /* TFFaceRecognizerLiveErrorManager.h in Headers */,
-				D92F057423676F7900451479 /* TFFaceTrainerErrorManager.h in Headers */,
-				D92F055D23676F7900451479 /* Colorization.h in Headers */,
-				D92F056E23676F7900451479 /* TFFaceRecognizerDelegate.h in Headers */,
-				D92F056723676F7900451479 /* TFObjectDetection.h in Headers */,
-				D92F055723676F7900451479 /* FaceDetector.h in Headers */,
-				D92F057123676F7900451479 /* TFFaceRecognizerLiveDelegate.h in Headers */,
-				D92F056323676F7900451479 /* TFSpeechDelegate.h in Headers */,
-				D92F057223676F7900451479 /* TFFaceRecognizerLive.h in Headers */,
+				D92F05E12367744100451479 /* TFFaceTrainer.h in Headers */,
+				D92F05BC2367744100451479 /* TFFaceRecognition.h in Headers */,
+				D92F05DC2367744100451479 /* TFFaceRecognizerLive.h in Headers */,
+				D92F05D12367744100451479 /* TFObjectDetection.h in Headers */,
+				D92F05DF2367744100451479 /* TFFaceTrainerDelegate.h in Headers */,
+				D92F05D32367744100451479 /* TFObjectDetectionDelegate.h in Headers */,
+				D92F05D82367744100451479 /* TFFaceRecognizerDelegate.h in Headers */,
+				D92F05E32367744100451479 /* TFColorizationDelegate.h in Headers */,
+				D92F05BB2367744100451479 /* FaceRecognizerDelegate.h in Headers */,
+				D92F05CD2367744100451479 /* TFSpeechDelegate.h in Headers */,
+				D92F05DB2367744100451479 /* TFFaceRecognizerLiveDelegate.h in Headers */,
+				D92F05CE2367744100451479 /* TFVoiceRecognitionDelegate.h in Headers */,
+				D92F05E52367744100451479 /* TFColorization.h in Headers */,
+				D92F05CC2367744100451479 /* TFSpeech.h in Headers */,
+				D92F05D42367744100451479 /* TFFaceRecognizer.h in Headers */,
+				D92F05CA2367744100451479 /* TFVoiceRecognition.h in Headers */,
+				D92F05D72367744100451479 /* TFFaceRecognizerErrorManager.h in Headers */,
+				D92F05C52367744100451479 /* ObjectDetection.h in Headers */,
+				D92F05BF2367744100451479 /* FaceRecognizerErrorManager.h in Headers */,
+				D92F05DE2367744100451479 /* TFFaceTrainerErrorManager.h in Headers */,
+				D92F05C72367744100451479 /* Colorization.h in Headers */,
+				D92F057C23676F7900451479 /* ThinkerFarm-Prefix.pch in Headers */,
+				D92F05C12367744100451479 /* FaceDetector.h in Headers */,
+				D92F05BA2367744100451479 /* ThinkerFarm.h in Headers */,
+				D92F05DD2367744100451479 /* TFFaceRecognizerLiveErrorManager.h in Headers */,
+				D92F05BD2367744100451479 /* OpenCVData.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,8 +518,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D92F057E23676F7900451479 /* Info.plist in Resources */,
-				D92F055623676F7900451479 /* haarcascade_frontalface_alt2.xml in Resources */,
+				D92F05C02367744100451479 /* haarcascade_frontalface_alt2.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,24 +557,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D92F055E23676F7900451479 /* Colorization.mm in Sources */,
-				D92F056623676F7900451479 /* TFSpeech.m in Sources */,
-				D92F057A23676F7900451479 /* TFColorization.mm in Sources */,
-				D92F055F23676F7900451479 /* colorizecpp.cpp in Sources */,
-				D92F055823676F7900451479 /* FaceDetector.mm in Sources */,
-				D92F056B23676F7900451479 /* TFFaceRecognizer.mm in Sources */,
-				D92F055A23676F7900451479 /* FaceRecognizerErrorManager.mm in Sources */,
-				D92F057623676F7900451479 /* TFFaceTrainer.mm in Sources */,
-				D92F056523676F7900451479 /* TFVoiceRecognition.m in Sources */,
-				D92F057823676F7900451479 /* TFFaceTrainerErrorManager.mm in Sources */,
-				D92F056F23676F7900451479 /* TFFaceRecognizerLiveErrorManager.m in Sources */,
-				D92F056823676F7900451479 /* TFObjectDetection.mm in Sources */,
-				D92F057023676F7900451479 /* TFFaceRecognizerLive.mm in Sources */,
-				D92F055C23676F7900451479 /* ObjectDetection.mm in Sources */,
-				D92F056123676F7900451479 /* Test.swift in Sources */,
-				D92F055423676F7900451479 /* OpenCVData.mm in Sources */,
-				D92F056C23676F7900451479 /* TFFaceRecognizerErrorManager.mm in Sources */,
-				D92F055923676F7900451479 /* TFFaceRecognition.mm in Sources */,
+				D92F05C82367744100451479 /* Colorization.mm in Sources */,
+				D92F05D02367744100451479 /* TFSpeech.m in Sources */,
+				D92F05E42367744100451479 /* TFColorization.mm in Sources */,
+				D92F05C92367744100451479 /* colorizecpp.cpp in Sources */,
+				D92F05C22367744100451479 /* FaceDetector.mm in Sources */,
+				D92F05D52367744100451479 /* TFFaceRecognizer.mm in Sources */,
+				D92F05C42367744100451479 /* FaceRecognizerErrorManager.mm in Sources */,
+				D92F05E02367744100451479 /* TFFaceTrainer.mm in Sources */,
+				D92F05CF2367744100451479 /* TFVoiceRecognition.m in Sources */,
+				D92F05E22367744100451479 /* TFFaceTrainerErrorManager.mm in Sources */,
+				D92F05D92367744100451479 /* TFFaceRecognizerLiveErrorManager.m in Sources */,
+				D92F05D22367744100451479 /* TFObjectDetection.mm in Sources */,
+				D92F05DA2367744100451479 /* TFFaceRecognizerLive.mm in Sources */,
+				D92F05C62367744100451479 /* ObjectDetection.mm in Sources */,
+				D92F05CB2367744100451479 /* Test.swift in Sources */,
+				D92F05BE2367744100451479 /* OpenCVData.mm in Sources */,
+				D92F05D62367744100451479 /* TFFaceRecognizerErrorManager.mm in Sources */,
+				D92F05C32367744100451479 /* TFFaceRecognition.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,6 +717,7 @@
 		};
 		D931CDCB21AEC41B00B64846 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCA5EE657A2A4D87BC06C026 /* Pods-ThinkerFarm.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -716,7 +730,7 @@
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/OpenCV";
 				GCC_PREFIX_HEADER = "ThinkerFarm-Prefix.pch";
-				INFOPLIST_FILE = ThinkerFarm/Info.plist;
+				INFOPLIST_FILE = Core/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -740,6 +754,7 @@
 		};
 		D931CDCC21AEC41B00B64846 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13A4EF3662CCCD1745BBC57D /* Pods-ThinkerFarm.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -752,7 +767,7 @@
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/OpenCV";
 				GCC_PREFIX_HEADER = "ThinkerFarm-Prefix.pch";
-				INFOPLIST_FILE = ThinkerFarm/Info.plist;
+				INFOPLIST_FILE = Core/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
