@@ -53,6 +53,7 @@
 		D92F05E32367744100451479 /* TFColorizationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F05B62367744000451479 /* TFColorizationDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D92F05E42367744100451479 /* TFColorization.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F05B72367744000451479 /* TFColorization.mm */; };
 		D92F05E52367744100451479 /* TFColorization.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F05B82367744000451479 /* TFColorization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D92F05ED23678F5900451479 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D92F05EC23678F5900451479 /* README.md */; };
 		D931CDC021AEC41B00B64846 /* ThinkerFarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D931CDB621AEC41B00B64846 /* ThinkerFarm.framework */; };
 		D931CDC521AEC41B00B64846 /* ThinkerFarmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D931CDC421AEC41B00B64846 /* ThinkerFarmTests.m */; };
 		D931CE7921AECA2000B64846 /* liblibjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D931CE7721AECA2000B64846 /* liblibjpeg.a */; };
@@ -131,6 +132,7 @@
 		D92F05B72367744000451479 /* TFColorization.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TFColorization.mm; sourceTree = "<group>"; };
 		D92F05B82367744000451479 /* TFColorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFColorization.h; sourceTree = "<group>"; };
 		D92F05B92367744000451479 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D92F05EC23678F5900451479 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D931CDB621AEC41B00B64846 /* ThinkerFarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThinkerFarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D931CDBF21AEC41B00B64846 /* ThinkerFarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThinkerFarmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D931CDC421AEC41B00B64846 /* ThinkerFarmTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThinkerFarmTests.m; sourceTree = "<group>"; };
@@ -351,6 +353,7 @@
 		D931CDAC21AEC41B00B64846 = {
 			isa = PBXGroup;
 			children = (
+				D92F05EC23678F5900451479 /* README.md */,
 				D92F057F2367744000451479 /* Core */,
 				D92F054E23676F7800451479 /* ThinkerFarm-Prefix.pch */,
 				D92F054F23676F7800451479 /* ThinkerFarm.h */,
@@ -518,6 +521,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D92F05ED23678F5900451479 /* README.md in Resources */,
 				D92F05C02367744100451479 /* haarcascade_frontalface_alt2.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
