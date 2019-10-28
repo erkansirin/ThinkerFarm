@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ThinkerFarm"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.summary      = "Deep Learning Computer Vision Framework iOS."
 
   # This description is used to generate tags and improve search results.
@@ -82,6 +82,13 @@ Pod::Spec.new do |spec|
   #spec.source       = { :path =>'/Users/erkansirin/Desktop/ai/thinkerfarm/ThinkerFarm/ThinkerFarm' }
 
 
+  spec.public_header_files = "ThinkerFarm.framework/Headers/*.h"
+  spec.source_files = "ThinkerFarm.framework/Headers/*.h"
+  spec.vendored_frameworks = "ThinkerFarm.framework"
+  spec.swift_version = "4.2"
+
+
+
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  CocoaPods is smart about how it includes source code. For source files
@@ -90,8 +97,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "ThinkerFarm"
-  spec.exclude_files = "Classes/Exclude"
+  #spec.source_files  = "ThinkerFarm"
+  #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 

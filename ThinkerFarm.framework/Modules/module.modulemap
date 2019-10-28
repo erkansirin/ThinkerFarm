@@ -1,0 +1,11 @@
+framework module ThinkerFarm {
+  umbrella header "ThinkerFarm.h"
+
+  export *
+  module * { export * }
+}
+
+module ThinkerFarm.Swift {
+    header "ThinkerFarm-Swift.h"
+    requires objc
+}
