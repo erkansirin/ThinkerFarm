@@ -1,7 +1,7 @@
 # ThinkerFarm
 
 
-### ThinkerFarm V1.0.2  
+### ThinkerFarm V1.0.3  
 
 ## Introduction  
 Computer Vision Framework for iOS.  
@@ -9,7 +9,7 @@ Computer Vision Framework for iOS.
 ThinkerFarm is a framework contains sets of wrappers of OpenCV DNN module and Tensorflow Lite. Object Detection module supports Tensorflow model file and Tensorflow Lite model files, Caffe models, ONNX models, Torch model files. ThinkerFarm gives you easy to use iOS Speech Recognition and Speech Synthesizer. On Text recognition i used SwiftyTesseract.
 
 
-## - Preparing ThinkerFarm Fat Framework -
+## - Preparing ThinkerFarm Universal Framework -
 
 1 : First build for both simulator and generic device (release)
 2 : Go project root / build/ Products folder
@@ -36,7 +36,7 @@ use_frameworks!
 
 target 'YOUR_TARGET_NAME' do  
     use_frameworks!  
-    pod 'ThinkerFarm', :git => "https://github.com/erkansirin/ThinkerFarm.git", :tag => "1.0.2"  
+    pod 'ThinkerFarm'
 end  
 Replace YOUR_TARGET_NAME and then, in the Podfile directory, type:  
 
