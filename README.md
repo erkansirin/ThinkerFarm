@@ -14,22 +14,24 @@ ThinkerFarm is a framework contains sets of wrappers of OpenCV DNN module and Te
 1 : First build for both simulator and generic device (release)  
 2 : Go project root / build/ Products folder  
 3 : type :  
-
+```
 mkdir ThinkerFarm  
 lipo -create -output “ThinkerFarm” “Release-iphonesimulator/ThinkerFarm.framework/ThinkerFarm” “Release-iphoneos/ThinkerFarm.framework/ThinkerFarm”  
-
+```
 4 : type :  
-
+```
 $ cp -R Release-iphoneos/ThinkerFarm.framework ./ThinkerFarm.framework  
-
+```
 5 : type :  
+```
 $ mv ThinkerFarm ./ThinkerFarm.framework/ThinkerFarm  
-
+```
 
 ## Installation  
 CocoaPods  
 
 ## Podfile    
+```
 use_frameworks!  
 
 target 'YOUR_TARGET_NAME' do  
@@ -37,9 +39,10 @@ target 'YOUR_TARGET_NAME' do
     pod 'ThinkerFarm'
 end  
 Replace YOUR_TARGET_NAME and then, in the Podfile directory, type:  
-
+```
+```
 $ pod install  
-
+```
 
 ## Features    
 
