@@ -20,7 +20,7 @@ ThinkerFarm is a framework contains sets of wrappers of OpenCV DNN module and Te
 ## Third party frameworks used in project
 [✓] - [OpenCV DNN](https://docs.opencv.org/master/d2/d58/tutorial_table_of_content_dnn.html)  
 [✓] - [OpenCV Face Recognition](https://docs.opencv.org/2.4/modules/contrib/doc/facerec/facerec_tutorial.html)  
-[✓] - [TensorFlowLiteSwift](https://www.tensorflow.org/lite/guide/ios)
+[✓] - [TensorFlowLiteSwift](https://www.tensorflow.org/lite/guide/ios)  
 [✓] - [SwiftyTesseract](https://github.com/SwiftyTesseract/SwiftyTesseractl)  
 
 ## Usage and Installation  
