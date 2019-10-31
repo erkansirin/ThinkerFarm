@@ -11,7 +11,7 @@ ThinkerFarm is a framework contains sets of wrappers of OpenCV DNN module and Te
 ## Features    
 
 [✓] - Object Detection module supports Caffe, ONNX, Torch, Tensorflow model files   
-[✓] - Face Recognition module (OpenCV Face Recognition Module)  
+[✓] - Face Recognition module (OpenCV Face Recognition Module) This module deprecated i no longer update or fix it was experimental purposes only but [here](https://github.com/erkansirin/OpenCVFaceRecognitioniOS) is fully functional example app feel free to clone and play with it  
 [✓] - Speech Recognition  
 [✓] - Speech Synthesizer   
 [✓] - Custom camer view for real-time detection  
