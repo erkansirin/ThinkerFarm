@@ -86,6 +86,9 @@ Pod::Spec.new do |spec|
   spec.source_files = "ThinkerFarm.framework/Headers/*.h"
   spec.vendored_frameworks = "ThinkerFarm.framework"
   spec.swift_version = "4.2"
+  spec.dependency 'SwiftyTesseract', '~> 2.0'
+  spec.dependency 'TensorFlowLiteSwift'
+  
 
 
 

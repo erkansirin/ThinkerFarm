@@ -6,6 +6,12 @@ workspace 'ThinkerFarmMain.xcworkspace'
 
 target 'ThinkerFarm' do
     project 'ThinkerFarm/ThinkerFarm.xcodeproj'
+    use_frameworks!
+end
+
+target 'ThinkerFarmExample' do
+    project 'ThinkerFarmExample/ThinkerFarmExample.xcodeproj'
+    use_frameworks!
 end
 
 post_install do |installer|

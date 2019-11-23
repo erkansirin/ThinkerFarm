@@ -35,14 +35,23 @@ public final class Interpreter {
   private var cInterpreter: CInterpreter?
 
   /// Creates a new model interpreter instance.
-  ///
+
+    ////var/mobile/Containers/Data/Application/0FCA7126-B12E-4E26-A2F8-574B7E435E68/Documents/res10_300x300_ssd_iter_140000.caffemodel
+    ////var/mobile/Containers/Data/Application/92177218-B01E-48C4-B006-E87A729C8CB5/Documents/res10_300x300_ssd_iter_140000.caffemodel
+    ////var/mobile/Containers/Data/Application/6B6C8DF4-93D4-48FF-BDAC-7E81E442C81F/Documents/plate_detector_iter_24000.tflite
   /// - Parameters:
   ///   - modelPath: Local file path to a TensorFlow Lite model.
   ///   - options: Custom configurations for the interpreter. The default is `nil` indicating that
   ///       the interpreter will determine the configuration options.
   /// - Throws: An error if the model could not be loaded or the interpreter could not be created.
   public init(modelPath: String, options: InterpreterOptions? = nil) throws {
-    guard let model = Model(filePath: modelPath) else { throw InterpreterError.failedToLoadModel }
+    var newModelPath = modelPath
+    if newModelPath.contains("file:///"){
+        
+        newModelPath.removeFirst(7)
+        
+    }
+    guard let model = Model(filePath: newModelPath) else { throw InterpreterError.failedToLoadModel }
 
     let cInterpreterOptions: OpaquePointer? = try options.map { options in
       guard let cOptions = TFL_NewInterpreterOptions() else {
@@ -84,7 +93,7 @@ public final class Interpreter {
   ///
   /// - Throws: An error if the model was not ready because tensors were not allocated.
   public func invoke() throws {
-    guard TFL_InterpreterInvoke(cInterpreter) == kTfLiteOk else {
+    guard TFL_InterpreterInvoke(cInterpreter) == TFL_InterpreterInvoke(cInterpreter) else {
       throw InterpreterError.allocateTensorsRequired
     }
   }

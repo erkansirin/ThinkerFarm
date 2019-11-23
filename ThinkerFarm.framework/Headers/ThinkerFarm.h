@@ -21,7 +21,9 @@ FOUNDATION_EXPORT const unsigned char ThinkerFarmVersionString[];
 #import <ThinkerFarm/TFSpeech.h>
 #import <ThinkerFarm/TFVoiceRecognition.h>
 #import <ThinkerFarm/TFColorization.h>
-#import <ThinkerFarm/TFObjectDetection.h>
+#import <ThinkerFarm/CaffeDetection.h>
+
+
 
 
 

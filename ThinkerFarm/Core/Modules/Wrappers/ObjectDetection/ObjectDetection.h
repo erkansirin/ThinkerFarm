@@ -19,9 +19,17 @@
 
 @interface ObjectDetection : NSObject
 {
+    
 }
 
+
+
+
+
 - (NSMutableArray*)detectObjectFromImage:(cv::Mat&)frame;
--(instancetype)initWithCaffeModels:(NSString*)CaffeModel Prototext:(NSString*)Prototext;
+-(instancetype)initWithCaffeModels:(NSString*)CaffeModel Prototext:(NSString*)Prototext Treshold:(float)treshold inputWidth:(int)inputWidth inputHeight:(int)inputHeight modelLabelMap:(NSString*)modelLabelMap imageBlobScalefactor:(float)imageBlobScalefactor imageBlobMeanScalar:(NSArray*)imageBlobMeanScalar imageBlobSwapRB:(BOOL)imageBlobSwapRB imageBlobCrop:(BOOL)imageBlobCrop;
+
+
+
 
 @end

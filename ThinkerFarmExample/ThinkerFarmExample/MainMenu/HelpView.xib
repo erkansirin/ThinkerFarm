@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HelpView" customModule="Detectron" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="dTJ-ea-Rrg" id="TWu-1R-xHv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tz1-Vv-6I9">
+                    <rect key="frame" x="185" y="44" width="44" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Sve-x3-29Y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uiw-7E-dWV">
+                    <rect key="frame" x="0.0" y="44" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ECA-5L-2aA"/>
+                        <constraint firstAttribute="width" constant="40" id="eQt-cy-PoC"/>
+                    </constraints>
+                    <state key="normal" image="backbutton"/>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="77y-wU-7lc"/>
+                    </connections>
+                </button>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dTJ-ea-Rrg">
+                    <rect key="frame" x="0.0" y="89" width="414" height="773"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+            </subviews>
+            <color key="backgroundColor" red="0.80042666200000001" green="0.1959541142" blue="0.29424467679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Tz1-Vv-6I9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2XX-y9-ABb"/>
+                <constraint firstItem="Tz1-Vv-6I9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="4pn-Fy-phP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dTJ-ea-Rrg" secondAttribute="trailing" id="QdU-bc-5g0"/>
+                <constraint firstItem="dTJ-ea-Rrg" firstAttribute="top" secondItem="Tz1-Vv-6I9" secondAttribute="bottom" id="R8r-OY-14b"/>
+                <constraint firstItem="dTJ-ea-Rrg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WHl-fv-FMV"/>
+                <constraint firstItem="uiw-7E-dWV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cdX-pX-u5M"/>
+                <constraint firstItem="uiw-7E-dWV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="chX-d4-wxH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dTJ-ea-Rrg" secondAttribute="bottom" id="toV-OP-jsD"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="80"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backbutton" width="128" height="128"/>
+    </resources>
+</document>

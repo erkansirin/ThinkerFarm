@@ -10,16 +10,21 @@
 #import "ObjectDetection.h"
 #import "OpenCVData.h"
 
-NSString * caffe_model = @"res10_300x300_ssd_iter_140000";
-NSString * caffe_prototxt = @"deploy";
+
 
 NSString * tensor_model = @"ssd_mobilenet_v2_coco_2018_03_29";
 NSString * tensor_prototxt = @"ssd_mobilenet_v2_coco_2018_03_29.pbtxt";
+NSMutableString *text;
 
 cv::dnn::Net net;
-float confThreshold, nmsThreshold;
+cv::Scalar imageBlobScalar;
+BOOL SwapRB;
+BOOL Crop;
+NSString * caffeLabelMap =@"";
+float confThreshold, nmsThreshold, modelThreshold, scalefactor;
+int inputWidthLocal,inputHeightLocal;
 
-NSMutableArray * detections;
+
 
 @implementation ObjectDetection
 
@@ -28,18 +33,7 @@ NSMutableArray * detections;
     self = [super init];
     if (self) {
         
-        std::string caffePath = [[[NSBundle mainBundle] pathForResource:tensor_model ofType:@"pb"] UTF8String];
-        std::string protoPath = [[[NSBundle mainBundle] pathForResource:tensor_prototxt ofType:@"txt"] UTF8String];
-        
-        //net = cv::dnn::readNet(protoPath,caffePath,"caffe");
-        //net.setPreferableTarget(cv::dnn::DNN_TARGET_OPENCL);
-        //net = cv::dnn::readNetFromTensorflow(protoPath,caffePath);
-        net = cv::dnn::readNet(protoPath , caffePath, "tensorflow");
-        //net.setPreferableTarget(cv::dnn::DNN_TARGET_CPU);
-        
-        detections = [[NSMutableArray alloc] init];
-        
-        NSLog(@"init started");
+     
 
     }
     
@@ -47,16 +41,129 @@ NSMutableArray * detections;
 }
 
 
--(instancetype)initWithCaffeModels:(NSString*)CaffeModel Prototext:(NSString*)Prototext
+
+-(instancetype)initWithCaffeModels:(NSString*)CaffeModel Prototext:(NSString*)Prototext Treshold:(float)treshold inputWidth:(int)inputWidth inputHeight:(int)inputHeight modelLabelMap:(NSString*)modelLabelMap imageBlobScalefactor:(float)imageBlobScalefactor imageBlobMeanScalar:(NSArray*)imageBlobMeanScalar imageBlobSwapRB:(BOOL)imageBlobSwapRB imageBlobCrop:(BOOL)imageBlobCrop
 {
     self = [self init];
-    caffe_model = CaffeModel;
-    caffe_prototxt = Prototext;
-    
- 
-    std::string caffePath = [[[NSBundle mainBundle] pathForResource:caffe_model ofType:@"caffemodel"] UTF8String];
-    std::string protoPath = [[[NSBundle mainBundle] pathForResource:caffe_prototxt ofType:@"prototxt"] UTF8String];
 
+    if (imageBlobMeanScalar.count == 3) {
+        float sc1 = [imageBlobMeanScalar[0] floatValue];
+        float sc2 = [imageBlobMeanScalar[0] floatValue];
+        float sc3 = [imageBlobMeanScalar[0] floatValue];
+
+        imageBlobScalar = cv::Scalar(sc1, sc2, sc3);
+    }
+    
+    if (imageBlobMeanScalar.count == 2) {
+        int sc1 = [imageBlobMeanScalar[0] intValue];
+        int sc2 = [imageBlobMeanScalar[0] intValue];
+
+        imageBlobScalar = cv::Scalar(sc1, sc2);
+    }
+    
+    if (imageBlobMeanScalar.count == 1) {
+        int sc1 = [imageBlobMeanScalar[0] intValue];
+    
+        imageBlobScalar = cv::Scalar(sc1);
+    }
+    
+    Crop = imageBlobCrop;
+    SwapRB = imageBlobSwapRB;
+    
+    scalefactor = imageBlobScalefactor;
+
+        
+        
+    
+    
+
+    
+    
+    modelThreshold = treshold;
+    inputWidthLocal = inputWidth;
+    inputHeightLocal = inputHeight;
+    std::string caffePath;
+    std::string protoPath;
+    
+    NSString *pathcaffemodel = [[NSBundle mainBundle] pathForResource:CaffeModel ofType:@"caffemodel"];
+    if ([[NSFileManager defaultManager] fileExistsAtPath:pathcaffemodel])
+    {
+        caffePath = [pathcaffemodel UTF8String];
+    }
+    else
+    {
+        NSLog(@"caffemodel not found");
+    }
+    
+    NSString *pathprototxt = [[NSBundle mainBundle] pathForResource:CaffeModel ofType:@"prototxt"];
+    if ([[NSFileManager defaultManager] fileExistsAtPath:pathprototxt])
+    {
+        protoPath =  [pathprototxt UTF8String];
+    }
+    else
+    {
+        NSLog(@"protoPath not found");
+    }
+    
+    NSString *pathtxt = [[NSBundle mainBundle] pathForResource:CaffeModel ofType:@"txt"];
+    if ([[NSFileManager defaultManager] fileExistsAtPath:pathtxt])
+    {
+        caffeLabelMap = pathprototxt;
+    }
+    else
+    {
+        NSLog(@"txt not found");
+    }
+    
+    
+//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+//    NSString *documentsDirectory = [paths objectAtIndex:0];
+//    NSString *filePath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.caffemodel",CaffeModel]];
+//    NSString *content = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:NULL];
+    
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *caffepath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.caffemodel",CaffeModel]];
+    if([fileManager fileExistsAtPath:caffepath])
+    {
+        caffePath = [caffepath UTF8String];
+        NSLog(@"caffemodel found");
+    }else{
+        NSLog(@"caffemodel not found in doc");
+    }
+    
+    
+    NSString *protopath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.prototxt",CaffeModel]];
+    if([fileManager fileExistsAtPath:protopath])
+    {
+        protoPath = [protopath UTF8String];
+        NSLog(@"protopath found");
+    }else{
+        NSLog(@"protopath not found in doc");
+        
+    }
+    
+    
+    NSString *txtpath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.txt",CaffeModel]];
+    if([fileManager fileExistsAtPath:txtpath])
+    {
+        caffeLabelMap = txtpath;
+        NSLog(@"caffeLabelMap found");
+    }else{
+        NSLog(@"caffeLabelMap not found in doc");
+        
+    }
+    
+
+
+//    std::string caffePath = [[[NSBundle mainBundle] pathForResource:CaffeModel ofType:@"caffemodel"] UTF8String];
+//    std::string protoPath = [[[NSBundle mainBundle] pathForResource:Prototext ofType:@"prototxt"] UTF8String];
+//    caffeLabelMap = [[NSBundle mainBundle] pathForResource:modelLabelMap ofType:@"txt"];
+    
+    NSURL *fileURL = [NSURL fileURLWithPath:caffeLabelMap];
+    text = [NSMutableString stringWithContentsOfURL:fileURL encoding:NSUTF8StringEncoding error:nil];
+    
     net = cv::dnn::readNetFromCaffe(protoPath,caffePath);
     net.setPreferableTarget(cv::dnn::DNN_TARGET_OPENCL);
     
@@ -68,31 +175,30 @@ NSMutableArray * detections;
 {
    
     
+    NSMutableArray *detections = [[NSMutableArray alloc] init];
+    NSArray *parsed = [text componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
+    
     
 
-   // imageBlob = cv2.dnn.blobFromImage(cv2.resize(self.frame,(300,300)), 0.007843, (300, 300), (127.5, 127.5, 127.5), swapRB=False, crop=False)
     
     cvtColor(frame, frame, cv::COLOR_BGR2GRAY);
     cvtColor(frame, frame, cv::COLOR_GRAY2RGB);
     
 
-    resize(frame, frame, cv::Size(300, 300));
-    //resize(L, input, cv::Size(W_in, H_in));
-    
+    resize(frame, frame, cv::Size(inputWidthLocal, inputHeightLocal));
+
     UIImage * uiimage;
     uiimage = MatToUIImage(frame);
     
 
     
-    // run the L channel through the network
-    //blobFromImage(frame, blob, 1.0, inpSize, Scalar(), swapRB, false, CV_8U);
-    cv::Mat inputBlob = cv::dnn::blobFromImage(frame, 1, cv::Size(300,300), cv::Scalar(0, 0, 0),false,false);
+    cv::Mat inputBlob;
+
+
     
-    //cv::Mat inputBlob;
     
-    //cv::dnn::blobFromImage(frame,inputBlob,1, cv::Size(300,300), cv::Scalar(104.0, 177.0, 123.0),false,false);
-    //cv::Mat inputBlob = cv::dnn::blobFromImage(frame);
-    //print(inputBlob);
+    cv::dnn::blobFromImage(frame,inputBlob,scalefactor, cv::Size(inputWidthLocal,inputHeightLocal), imageBlobScalar,SwapRB,Crop);
+
     
     std::vector<cv::String> outNames = net.getUnconnectedOutLayersNames();
     std::vector<cv::Mat> outs;
@@ -108,13 +214,11 @@ NSMutableArray * detections;
     std::vector<int> classIds;
     std::vector<float> confidences;
     std::vector<cv::Rect> boxes;
+    //NSLog(@"caffeLabelMap 2: %@",caffeLabelMap);
     if (outLayerType == "DetectionOutput")
     {
         
-        
-        // Network produces output blob with a shape 1x1xNx7 where N is a number of
-        // detections and an every detection is a vector of values
-        // [batchId, classId, confidence, left, top, right, bottom]
+ 
         CV_Assert(outs.size() > 0);
         for (size_t k = 0; k < outs.size(); k++)
         {
@@ -122,7 +226,7 @@ NSMutableArray * detections;
             for (size_t i = 0; i < outs[k].total(); i += 7)
             {
                 float confidence = data[i + 2];
-                if (confidence > 0.01f)
+                if (confidence > modelThreshold)
                 {
                     int left   = (int)data[i + 3];
                     int top    = (int)data[i + 4];
@@ -158,6 +262,10 @@ NSMutableArray * detections;
                     
                     
                     [detectionObjects setObject:[NSString stringWithFormat:@"%d",classid] forKey:@"classId"];
+                    
+                    [detectionObjects setObject:[NSString stringWithFormat:@"%@",parsed[classid]] forKey:@"className"];
+                    
+                    
                     [detectionObjects setObject:NSStringFromCGRect(objectRect) forKey:@"boxCGRect"];
                     [detectionObjects setObject:[NSString stringWithFormat:@"%f",confidence] forKey:@"confidence"];
                     
@@ -184,17 +292,11 @@ NSMutableArray * detections;
         int idx = indices[i];
         cv::Rect box = boxes[idx];
 
-        //drawPred(classIds[idx], confidences[idx], box.x, box.y,
-                 //box.x + box.width, box.y + box.height, frame);
+     
     }
     
     
-        
-        
-    //sleep(10);
-    
-
-    //cvtColor(lab, color, cv::COLOR_Lab2BGR);
+ 
     
     return detections;
     

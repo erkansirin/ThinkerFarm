@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D90383042378A278006F68E5 /* TensorFlowDetection.swift in Headers */ = {isa = PBXBuildFile; fileRef = D9EDD7602376502F0097967A /* TensorFlowDetection.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		D91C4BC72383C8E3008093BE /* ObjectTracker.mm in Sources */ = {isa = PBXBuildFile; fileRef = D91C4BC62383C8E3008093BE /* ObjectTracker.mm */; };
 		D92F057C23676F7900451479 /* ThinkerFarm-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = D92F054E23676F7800451479 /* ThinkerFarm-Prefix.pch */; };
 		D92F057D23676F7900451479 /* ThinkerFarm.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F054F23676F7800451479 /* ThinkerFarm.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D92F05BB2367744100451479 /* FaceRecognizerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F05842367744000451479 /* FaceRecognizerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -31,9 +33,9 @@
 		D92F05CE2367744100451479 /* TFVoiceRecognitionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F059A2367744000451479 /* TFVoiceRecognitionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D92F05CF2367744100451479 /* TFVoiceRecognition.m in Sources */ = {isa = PBXBuildFile; fileRef = D92F059B2367744000451479 /* TFVoiceRecognition.m */; };
 		D92F05D02367744100451479 /* TFSpeech.m in Sources */ = {isa = PBXBuildFile; fileRef = D92F059C2367744000451479 /* TFSpeech.m */; };
-		D92F05D12367744100451479 /* TFObjectDetection.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F059F2367744000451479 /* TFObjectDetection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D92F05D22367744100451479 /* TFObjectDetection.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F05A02367744000451479 /* TFObjectDetection.mm */; };
-		D92F05D32367744100451479 /* TFObjectDetectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F05A12367744000451479 /* TFObjectDetectionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D92F05D12367744100451479 /* CaffeDetection.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F059F2367744000451479 /* CaffeDetection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D92F05D22367744100451479 /* CaffeDetection.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F05A02367744000451479 /* CaffeDetection.mm */; };
+		D92F05D32367744100451479 /* CaffeDetectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F05A12367744000451479 /* CaffeDetectionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D92F05D42367744100451479 /* TFFaceRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F05A42367744000451479 /* TFFaceRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D92F05D52367744100451479 /* TFFaceRecognizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F05A52367744000451479 /* TFFaceRecognizer.mm */; };
 		D92F05D62367744100451479 /* TFFaceRecognizerErrorManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = D92F05A62367744000451479 /* TFFaceRecognizerErrorManager.mm */; };
@@ -68,6 +70,18 @@
 		D93F3A8A21AED21700682D03 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D93F3A8921AED21700682D03 /* AssetsLibrary.framework */; };
 		D93F3A8C21AED22100682D03 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D93F3A8B21AED22100682D03 /* Accelerate.framework */; };
 		D93F3A8E21AED22700682D03 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D93F3A8D21AED22700682D03 /* AVFoundation.framework */; };
+		D955B451237FAC64001CA868 /* InterpreterOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D955B447237FAC64001CA868 /* InterpreterOptions.swift */; };
+		D955B452237FAC64001CA868 /* QuantizationParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D955B448237FAC64001CA868 /* QuantizationParameters.swift */; };
+		D955B453237FAC64001CA868 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D955B449237FAC64001CA868 /* Model.swift */; };
+		D955B454237FAC64001CA868 /* Tensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D955B44A237FAC64001CA868 /* Tensor.swift */; };
+		D955B455237FAC64001CA868 /* TensorFlowLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = D955B44B237FAC64001CA868 /* TensorFlowLite.swift */; };
+		D955B456237FAC64001CA868 /* InterpreterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D955B44C237FAC64001CA868 /* InterpreterError.swift */; };
+		D955B457237FAC64001CA868 /* Interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D955B44D237FAC64001CA868 /* Interpreter.swift */; };
+		D959D268237D113A000B8AD2 /* CaffeDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D959D267237D1139000B8AD2 /* CaffeDetector.swift */; };
+		D967A8AF23890BCA00FED842 /* PublicStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = D967A8AE23890BCA00FED842 /* PublicStructure.swift */; };
+		D967A8B023890C2B00FED842 /* PublicStructure.swift in Headers */ = {isa = PBXBuildFile; fileRef = D967A8AE23890BCA00FED842 /* PublicStructure.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		D97421F82378F8EA00393C97 /* InternalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97421F72378F8EA00393C97 /* InternalFunctions.swift */; };
+		D974220723793B5E00393C97 /* CaffeCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974220623793B5D00393C97 /* CaffeCamera.swift */; };
 		D9813ABB236A211E00AF82F5 /* InterpreterOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9813AB4236A211E00AF82F5 /* InterpreterOptions.swift */; };
 		D9813ABC236A211E00AF82F5 /* QuantizationParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9813AB5236A211E00AF82F5 /* QuantizationParameters.swift */; };
 		D9813ABD236A211E00AF82F5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9813AB6236A211E00AF82F5 /* Model.swift */; };
@@ -77,11 +91,23 @@
 		D9813AC1236A211E00AF82F5 /* Interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9813ABA236A211E00AF82F5 /* Interpreter.swift */; };
 		D9813AC4236A214C00AF82F5 /* CarPlateDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9813AC3236A214C00AF82F5 /* CarPlateDetector.swift */; };
 		D9813AC5236A220500AF82F5 /* CarPlateDetector.swift in Headers */ = {isa = PBXBuildFile; fileRef = D9813AC3236A214C00AF82F5 /* CarPlateDetector.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		D9813AC7236A223F00AF82F5 /* TensorFlowLiteC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9813AC6236A223E00AF82F5 /* TensorFlowLiteC.framework */; };
-		D9813AC8236A223F00AF82F5 /* TensorFlowLiteC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9813AC6236A223E00AF82F5 /* TensorFlowLiteC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D9813ACC236A22E100AF82F5 /* CVPixelBufferExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9813ACB236A22E100AF82F5 /* CVPixelBufferExtension.swift */; };
 		D9813ACF236A237300AF82F5 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9813ACD236A237300AF82F5 /* StringExtension.swift */; };
 		D9813AD0236A237300AF82F5 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9813ACE236A237300AF82F5 /* UIColorExtension.swift */; };
+		D9847954236AF7830065D9CE /* TextRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9847953236AF7830065D9CE /* TextRecognition.swift */; };
+		D9847955236AFF270065D9CE /* TextRecognition.swift in Headers */ = {isa = PBXBuildFile; fileRef = D9847953236AF7830065D9CE /* TextRecognition.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9BEC28B23818512007D646D /* TensorFlowLiteC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D955B450237FAC64001CA868 /* TensorFlowLiteC.framework */; };
+		D9E449F82375E3FB007595CB /* TesseractWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E449F72375E3FB007595CB /* TesseractWrapper.swift */; };
+		D9EDD75B23763A400097967A /* CameraFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EDD75A23763A400097967A /* CameraFeedManager.swift */; };
+		D9EDD75D23763A630097967A /* TensorFlowCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EDD75C23763A630097967A /* TensorFlowCamera.swift */; };
+		D9EDD75E23763DAD0097967A /* TensorFlowCamera.swift in Headers */ = {isa = PBXBuildFile; fileRef = D9EDD75C23763A630097967A /* TensorFlowCamera.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9EDD7612376502F0097967A /* TensorFlowDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EDD7602376502F0097967A /* TensorFlowDetection.swift */; };
+		D9EDD7632376542B0097967A /* ModelDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EDD7622376542B0097967A /* ModelDataHandler.swift */; };
+		D9EDD79023768AE70097967A /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EDD78F23768AE70097967A /* OverlayView.swift */; };
+		D9EDD79223768CE10097967A /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EDD79123768CE10097967A /* PreviewView.swift */; };
+		D9EDD79423787AD80097967A /* ThinkerFarm.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9EDD79323787AD80097967A /* ThinkerFarm.xcassets */; };
+		D9EDD79623788DA10097967A /* pinch-to-zoom.png in Resources */ = {isa = PBXBuildFile; fileRef = D9EDD79523788DA10097967A /* pinch-to-zoom.png */; };
+		D9FE2BC723802AC30074373F /* VideoAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FE2BC623802AC30074373F /* VideoAnalysis.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,24 +120,13 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		D9813AC9236A223F00AF82F5 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				D9813AC8236A223F00AF82F5 /* TensorFlowLiteC.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		13A4EF3662CCCD1745BBC57D /* Pods-ThinkerFarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkerFarm.release.xcconfig"; path = "Target Support Files/Pods-ThinkerFarm/Pods-ThinkerFarm.release.xcconfig"; sourceTree = "<group>"; };
+		45DE02536181249EFEA76CBC /* Pods_ThinkerFarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThinkerFarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		598FB654C444240349328AF6 /* libPods-ThinkerFarm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ThinkerFarm.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA5EE657A2A4D87BC06C026 /* Pods-ThinkerFarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkerFarm.debug.xcconfig"; path = "Target Support Files/Pods-ThinkerFarm/Pods-ThinkerFarm.debug.xcconfig"; sourceTree = "<group>"; };
+		D91C4BC52383C8C8008093BE /* ObjectTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectTracker.h; sourceTree = "<group>"; };
+		D91C4BC62383C8E3008093BE /* ObjectTracker.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjectTracker.mm; sourceTree = "<group>"; };
 		D92F054E23676F7800451479 /* ThinkerFarm-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ThinkerFarm-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		D92F054F23676F7800451479 /* ThinkerFarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThinkerFarm.h; sourceTree = SOURCE_ROOT; };
 		D92F05842367744000451479 /* FaceRecognizerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceRecognizerDelegate.h; sourceTree = "<group>"; };
@@ -136,9 +151,9 @@
 		D92F059A2367744000451479 /* TFVoiceRecognitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFVoiceRecognitionDelegate.h; sourceTree = "<group>"; };
 		D92F059B2367744000451479 /* TFVoiceRecognition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFVoiceRecognition.m; sourceTree = "<group>"; };
 		D92F059C2367744000451479 /* TFSpeech.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFSpeech.m; sourceTree = "<group>"; };
-		D92F059F2367744000451479 /* TFObjectDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFObjectDetection.h; sourceTree = "<group>"; };
-		D92F05A02367744000451479 /* TFObjectDetection.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TFObjectDetection.mm; sourceTree = "<group>"; };
-		D92F05A12367744000451479 /* TFObjectDetectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFObjectDetectionDelegate.h; sourceTree = "<group>"; };
+		D92F059F2367744000451479 /* CaffeDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaffeDetection.h; sourceTree = "<group>"; };
+		D92F05A02367744000451479 /* CaffeDetection.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CaffeDetection.mm; sourceTree = "<group>"; };
+		D92F05A12367744000451479 /* CaffeDetectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaffeDetectionDelegate.h; sourceTree = "<group>"; };
 		D92F05A42367744000451479 /* TFFaceRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFaceRecognizer.h; sourceTree = "<group>"; };
 		D92F05A52367744000451479 /* TFFaceRecognizer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TFFaceRecognizer.mm; sourceTree = "<group>"; };
 		D92F05A62367744000451479 /* TFFaceRecognizerErrorManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TFFaceRecognizerErrorManager.mm; sourceTree = "<group>"; };
@@ -176,6 +191,18 @@
 		D93F3A8921AED21700682D03 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		D93F3A8B21AED22100682D03 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		D93F3A8D21AED22700682D03 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D955B447237FAC64001CA868 /* InterpreterOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterpreterOptions.swift; sourceTree = "<group>"; };
+		D955B448237FAC64001CA868 /* QuantizationParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuantizationParameters.swift; sourceTree = "<group>"; };
+		D955B449237FAC64001CA868 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		D955B44A237FAC64001CA868 /* Tensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tensor.swift; sourceTree = "<group>"; };
+		D955B44B237FAC64001CA868 /* TensorFlowLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TensorFlowLite.swift; sourceTree = "<group>"; };
+		D955B44C237FAC64001CA868 /* InterpreterError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterpreterError.swift; sourceTree = "<group>"; };
+		D955B44D237FAC64001CA868 /* Interpreter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interpreter.swift; sourceTree = "<group>"; };
+		D955B450237FAC64001CA868 /* TensorFlowLiteC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TensorFlowLiteC.framework; sourceTree = "<group>"; };
+		D959D267237D1139000B8AD2 /* CaffeDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeDetector.swift; sourceTree = "<group>"; };
+		D967A8AE23890BCA00FED842 /* PublicStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicStructure.swift; sourceTree = "<group>"; };
+		D97421F72378F8EA00393C97 /* InternalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalFunctions.swift; sourceTree = "<group>"; };
+		D974220623793B5D00393C97 /* CaffeCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeCamera.swift; sourceTree = "<group>"; };
 		D9813AB4236A211E00AF82F5 /* InterpreterOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterpreterOptions.swift; sourceTree = "<group>"; };
 		D9813AB5236A211E00AF82F5 /* QuantizationParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuantizationParameters.swift; sourceTree = "<group>"; };
 		D9813AB6236A211E00AF82F5 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -184,10 +211,20 @@
 		D9813AB9236A211E00AF82F5 /* InterpreterError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterpreterError.swift; sourceTree = "<group>"; };
 		D9813ABA236A211E00AF82F5 /* Interpreter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interpreter.swift; sourceTree = "<group>"; };
 		D9813AC3236A214C00AF82F5 /* CarPlateDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlateDetector.swift; sourceTree = "<group>"; };
-		D9813AC6236A223E00AF82F5 /* TensorFlowLiteC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TensorFlowLiteC.framework; path = TensorFlow/TensorFlowLiteC/Frameworks/TensorFlowLiteC.framework; sourceTree = "<group>"; };
 		D9813ACB236A22E100AF82F5 /* CVPixelBufferExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVPixelBufferExtension.swift; sourceTree = "<group>"; };
 		D9813ACD236A237300AF82F5 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		D9813ACE236A237300AF82F5 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		D9847953236AF7830065D9CE /* TextRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognition.swift; sourceTree = "<group>"; };
+		D9E449F72375E3FB007595CB /* TesseractWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesseractWrapper.swift; sourceTree = "<group>"; };
+		D9EDD75A23763A400097967A /* CameraFeedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFeedManager.swift; sourceTree = "<group>"; };
+		D9EDD75C23763A630097967A /* TensorFlowCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TensorFlowCamera.swift; sourceTree = "<group>"; };
+		D9EDD7602376502F0097967A /* TensorFlowDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TensorFlowDetection.swift; sourceTree = "<group>"; };
+		D9EDD7622376542B0097967A /* ModelDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDataHandler.swift; sourceTree = "<group>"; };
+		D9EDD78F23768AE70097967A /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		D9EDD79123768CE10097967A /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		D9EDD79323787AD80097967A /* ThinkerFarm.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ThinkerFarm.xcassets; sourceTree = "<group>"; };
+		D9EDD79523788DA10097967A /* pinch-to-zoom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pinch-to-zoom.png"; sourceTree = "<group>"; };
+		D9FE2BC623802AC30074373F /* VideoAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoAnalysis.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,7 +237,7 @@
 				D93F3A8A21AED21700682D03 /* AssetsLibrary.framework in Frameworks */,
 				D93F3A8821AED21000682D03 /* CoreImage.framework in Frameworks */,
 				D93F3A8621AED20700682D03 /* CoreMedia.framework in Frameworks */,
-				D9813AC7236A223F00AF82F5 /* TensorFlowLiteC.framework in Frameworks */,
+				D9BEC28B23818512007D646D /* TensorFlowLiteC.framework in Frameworks */,
 				D93F3A8421AED1FF00682D03 /* CoreVideo.framework in Frameworks */,
 				D93F3A8221AED1F800682D03 /* QuartzCore.framework in Frameworks */,
 				D93F3A8021AED1F000682D03 /* UIKit.framework in Frameworks */,
@@ -233,6 +270,15 @@
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
+		D91C4BC42383C87D008093BE /* ObjectTracker */ = {
+			isa = PBXGroup;
+			children = (
+				D91C4BC52383C8C8008093BE /* ObjectTracker.h */,
+				D91C4BC62383C8E3008093BE /* ObjectTracker.mm */,
+			);
+			path = ObjectTracker;
+			sourceTree = "<group>";
+		};
 		D92F057F2367744000451479 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,8 +291,11 @@
 		D92F05812367744000451479 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				D9813AC2236A212B00AF82F5 /* CarPlateDetector */,
+				D92F059E2367744000451479 /* CaffeMain */,
+				D9EDD759237639900097967A /* TensorflowMain */,
+				D9E449F62375E3D1007595CB /* TextRecognition */,
 				D92F05822367744000451479 /* Wrappers */,
+				D9813AC2236A212B00AF82F5 /* CarPlateDetector */,
 				D92F05952367744000451479 /* TFVoiceEngine */,
 				D92F059D2367744000451479 /* TFVisionEngine */,
 			);
@@ -256,6 +305,8 @@
 		D92F05822367744000451479 /* Wrappers */ = {
 			isa = PBXGroup;
 			children = (
+				D91C4BC42383C87D008093BE /* ObjectTracker */,
+				D955B440237FAC64001CA868 /* TensorFlow */,
 				D9813ACA236A22E100AF82F5 /* SwiftTools */,
 				D9813AB3236A211E00AF82F5 /* Sources */,
 				D92F05832367744000451479 /* FaceRecognition */,
@@ -269,13 +320,13 @@
 			isa = PBXGroup;
 			children = (
 				D92F05842367744000451479 /* FaceRecognizerDelegate.h */,
-				D92F05852367744000451479 /* TFFaceRecognition.h */,
 				D92F05862367744000451479 /* OpenCVData.h */,
 				D92F05872367744000451479 /* OpenCVData.mm */,
 				D92F05882367744000451479 /* FaceRecognizerErrorManager.h */,
 				D92F05892367744000451479 /* haarcascade_frontalface_alt2.xml */,
 				D92F058A2367744000451479 /* FaceDetector.h */,
 				D92F058B2367744000451479 /* FaceDetector.mm */,
+				D92F05852367744000451479 /* TFFaceRecognition.h */,
 				D92F058C2367744000451479 /* TFFaceRecognition.mm */,
 				D92F058D2367744000451479 /* FaceRecognizerErrorManager.mm */,
 			);
@@ -318,21 +369,22 @@
 		D92F059D2367744000451479 /* TFVisionEngine */ = {
 			isa = PBXGroup;
 			children = (
-				D92F059E2367744000451479 /* TFObjectDetection */,
 				D92F05A22367744000451479 /* FaceRecognition */,
 				D92F05B52367744000451479 /* TFColorization */,
 			);
 			path = TFVisionEngine;
 			sourceTree = "<group>";
 		};
-		D92F059E2367744000451479 /* TFObjectDetection */ = {
+		D92F059E2367744000451479 /* CaffeMain */ = {
 			isa = PBXGroup;
 			children = (
-				D92F059F2367744000451479 /* TFObjectDetection.h */,
-				D92F05A02367744000451479 /* TFObjectDetection.mm */,
-				D92F05A12367744000451479 /* TFObjectDetectionDelegate.h */,
+				D92F059F2367744000451479 /* CaffeDetection.h */,
+				D92F05A02367744000451479 /* CaffeDetection.mm */,
+				D92F05A12367744000451479 /* CaffeDetectionDelegate.h */,
+				D974220623793B5D00393C97 /* CaffeCamera.swift */,
+				D959D267237D1139000B8AD2 /* CaffeDetector.swift */,
 			);
-			path = TFObjectDetection;
+			path = CaffeMain;
 			sourceTree = "<group>";
 		};
 		D92F05A22367744000451479 /* FaceRecognition */ = {
@@ -394,6 +446,7 @@
 		D931CDAC21AEC41B00B64846 = {
 			isa = PBXGroup;
 			children = (
+				D9EDD78223765E690097967A /* Assets */,
 				D92F05EC23678F5900451479 /* README.md */,
 				D92F057F2367744000451479 /* Core */,
 				D92F054E23676F7800451479 /* ThinkerFarm-Prefix.pch */,
@@ -426,7 +479,6 @@
 		D931CE7121AEC75C00B64846 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D9813AC6236A223E00AF82F5 /* TensorFlowLiteC.framework */,
 				D93F3A8D21AED22700682D03 /* AVFoundation.framework */,
 				D93F3A8B21AED22100682D03 /* Accelerate.framework */,
 				D93F3A8921AED21700682D03 /* AssetsLibrary.framework */,
@@ -441,8 +493,88 @@
 				D931CE7721AECA2000B64846 /* liblibjpeg.a */,
 				D931CE7821AECA2000B64846 /* opencv2.framework */,
 				598FB654C444240349328AF6 /* libPods-ThinkerFarm.a */,
+				45DE02536181249EFEA76CBC /* Pods_ThinkerFarm.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D955B440237FAC64001CA868 /* TensorFlow */ = {
+			isa = PBXGroup;
+			children = (
+				D955B441237FAC64001CA868 /* TensorFlowLiteSwift */,
+				D955B44E237FAC64001CA868 /* TensorFlowLiteC */,
+			);
+			path = TensorFlow;
+			sourceTree = SOURCE_ROOT;
+		};
+		D955B441237FAC64001CA868 /* TensorFlowLiteSwift */ = {
+			isa = PBXGroup;
+			children = (
+				D955B442237FAC64001CA868 /* tensorflow */,
+			);
+			path = TensorFlowLiteSwift;
+			sourceTree = "<group>";
+		};
+		D955B442237FAC64001CA868 /* tensorflow */ = {
+			isa = PBXGroup;
+			children = (
+				D955B443237FAC64001CA868 /* lite */,
+			);
+			path = tensorflow;
+			sourceTree = "<group>";
+		};
+		D955B443237FAC64001CA868 /* lite */ = {
+			isa = PBXGroup;
+			children = (
+				D955B444237FAC64001CA868 /* experimental */,
+			);
+			path = lite;
+			sourceTree = "<group>";
+		};
+		D955B444237FAC64001CA868 /* experimental */ = {
+			isa = PBXGroup;
+			children = (
+				D955B445237FAC64001CA868 /* swift */,
+			);
+			path = experimental;
+			sourceTree = "<group>";
+		};
+		D955B445237FAC64001CA868 /* swift */ = {
+			isa = PBXGroup;
+			children = (
+				D955B446237FAC64001CA868 /* Sources */,
+			);
+			path = swift;
+			sourceTree = "<group>";
+		};
+		D955B446237FAC64001CA868 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D955B447237FAC64001CA868 /* InterpreterOptions.swift */,
+				D955B448237FAC64001CA868 /* QuantizationParameters.swift */,
+				D955B449237FAC64001CA868 /* Model.swift */,
+				D955B44A237FAC64001CA868 /* Tensor.swift */,
+				D955B44B237FAC64001CA868 /* TensorFlowLite.swift */,
+				D955B44C237FAC64001CA868 /* InterpreterError.swift */,
+				D955B44D237FAC64001CA868 /* Interpreter.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D955B44E237FAC64001CA868 /* TensorFlowLiteC */ = {
+			isa = PBXGroup;
+			children = (
+				D955B44F237FAC64001CA868 /* Frameworks */,
+			);
+			path = TensorFlowLiteC;
+			sourceTree = "<group>";
+		};
+		D955B44F237FAC64001CA868 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D955B450237FAC64001CA868 /* TensorFlowLiteC.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		D9813AB3236A211E00AF82F5 /* Sources */ = {
@@ -478,6 +610,40 @@
 			path = SwiftTools;
 			sourceTree = "<group>";
 		};
+		D9E449F62375E3D1007595CB /* TextRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				D9847953236AF7830065D9CE /* TextRecognition.swift */,
+				D9E449F72375E3FB007595CB /* TesseractWrapper.swift */,
+			);
+			path = TextRecognition;
+			sourceTree = "<group>";
+		};
+		D9EDD759237639900097967A /* TensorflowMain */ = {
+			isa = PBXGroup;
+			children = (
+				D9EDD75A23763A400097967A /* CameraFeedManager.swift */,
+				D9EDD75C23763A630097967A /* TensorFlowCamera.swift */,
+				D9EDD7602376502F0097967A /* TensorFlowDetection.swift */,
+				D9EDD7622376542B0097967A /* ModelDataHandler.swift */,
+				D9EDD78F23768AE70097967A /* OverlayView.swift */,
+				D9EDD79123768CE10097967A /* PreviewView.swift */,
+				D97421F72378F8EA00393C97 /* InternalFunctions.swift */,
+				D9FE2BC623802AC30074373F /* VideoAnalysis.swift */,
+				D967A8AE23890BCA00FED842 /* PublicStructure.swift */,
+			);
+			path = TensorflowMain;
+			sourceTree = "<group>";
+		};
+		D9EDD78223765E690097967A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D9EDD79523788DA10097967A /* pinch-to-zoom.png */,
+				D9EDD79323787AD80097967A /* ThinkerFarm.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -489,13 +655,12 @@
 				D92F05E12367744100451479 /* TFFaceTrainer.h in Headers */,
 				D92F05BC2367744100451479 /* TFFaceRecognition.h in Headers */,
 				D92F05DC2367744100451479 /* TFFaceRecognizerLive.h in Headers */,
-				D92F05D12367744100451479 /* TFObjectDetection.h in Headers */,
+				D92F05D12367744100451479 /* CaffeDetection.h in Headers */,
 				D92F05DF2367744100451479 /* TFFaceTrainerDelegate.h in Headers */,
-				D92F05D32367744100451479 /* TFObjectDetectionDelegate.h in Headers */,
+				D92F05D32367744100451479 /* CaffeDetectionDelegate.h in Headers */,
 				D92F05D82367744100451479 /* TFFaceRecognizerDelegate.h in Headers */,
 				D92F05E32367744100451479 /* TFColorizationDelegate.h in Headers */,
 				D92F05BB2367744100451479 /* FaceRecognizerDelegate.h in Headers */,
-				D9813AC5236A220500AF82F5 /* CarPlateDetector.swift in Headers */,
 				D92F05CD2367744100451479 /* TFSpeechDelegate.h in Headers */,
 				D92F05DB2367744100451479 /* TFFaceRecognizerLiveDelegate.h in Headers */,
 				D92F05CE2367744100451479 /* TFVoiceRecognitionDelegate.h in Headers */,
@@ -503,6 +668,11 @@
 				D92F05CC2367744100451479 /* TFSpeech.h in Headers */,
 				D92F05D42367744100451479 /* TFFaceRecognizer.h in Headers */,
 				D92F05CA2367744100451479 /* TFVoiceRecognition.h in Headers */,
+				D9847955236AFF270065D9CE /* TextRecognition.swift in Headers */,
+				D9EDD75E23763DAD0097967A /* TensorFlowCamera.swift in Headers */,
+				D9813AC5236A220500AF82F5 /* CarPlateDetector.swift in Headers */,
+				D967A8B023890C2B00FED842 /* PublicStructure.swift in Headers */,
+				D90383042378A278006F68E5 /* TensorFlowDetection.swift in Headers */,
 				D92F05D72367744100451479 /* TFFaceRecognizerErrorManager.h in Headers */,
 				D92F05C52367744100451479 /* ObjectDetection.h in Headers */,
 				D92F05BF2367744100451479 /* FaceRecognizerErrorManager.h in Headers */,
@@ -527,7 +697,6 @@
 				D931CDB221AEC41B00B64846 /* Sources */,
 				D931CDB321AEC41B00B64846 /* Frameworks */,
 				D931CDB421AEC41B00B64846 /* Resources */,
-				D9813AC9236A223F00AF82F5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -597,8 +766,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9EDD79623788DA10097967A /* pinch-to-zoom.png in Resources */,
 				D92F05ED23678F5900451479 /* README.md in Resources */,
 				D92F05C02367744100451479 /* haarcascade_frontalface_alt2.xml in Resources */,
+				D9EDD79423787AD80097967A /* ThinkerFarm.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,31 +811,52 @@
 				D9813ABD236A211E00AF82F5 /* Model.swift in Sources */,
 				D9813AC4236A214C00AF82F5 /* CarPlateDetector.swift in Sources */,
 				D9813ABF236A211E00AF82F5 /* TensorFlowLite.swift in Sources */,
+				D9EDD7632376542B0097967A /* ModelDataHandler.swift in Sources */,
 				D92F05C82367744100451479 /* Colorization.mm in Sources */,
+				D955B456237FAC64001CA868 /* InterpreterError.swift in Sources */,
+				D9EDD79023768AE70097967A /* OverlayView.swift in Sources */,
+				D9EDD79223768CE10097967A /* PreviewView.swift in Sources */,
 				D92F05D02367744100451479 /* TFSpeech.m in Sources */,
+				D9FE2BC723802AC30074373F /* VideoAnalysis.swift in Sources */,
 				D9813ABC236A211E00AF82F5 /* QuantizationParameters.swift in Sources */,
+				D9EDD75D23763A630097967A /* TensorFlowCamera.swift in Sources */,
 				D92F05E42367744100451479 /* TFColorization.mm in Sources */,
 				D92F05C92367744100451479 /* colorizecpp.cpp in Sources */,
 				D9813ACF236A237300AF82F5 /* StringExtension.swift in Sources */,
 				D9813AC0236A211E00AF82F5 /* InterpreterError.swift in Sources */,
+				D9EDD75B23763A400097967A /* CameraFeedManager.swift in Sources */,
+				D959D268237D113A000B8AD2 /* CaffeDetector.swift in Sources */,
 				D92F05C22367744100451479 /* FaceDetector.mm in Sources */,
 				D92F05D52367744100451479 /* TFFaceRecognizer.mm in Sources */,
 				D92F05C42367744100451479 /* FaceRecognizerErrorManager.mm in Sources */,
 				D9813ABB236A211E00AF82F5 /* InterpreterOptions.swift in Sources */,
+				D967A8AF23890BCA00FED842 /* PublicStructure.swift in Sources */,
+				D955B452237FAC64001CA868 /* QuantizationParameters.swift in Sources */,
+				D9EDD7612376502F0097967A /* TensorFlowDetection.swift in Sources */,
 				D92F05E02367744100451479 /* TFFaceTrainer.mm in Sources */,
 				D92F05CF2367744100451479 /* TFVoiceRecognition.m in Sources */,
 				D92F05E22367744100451479 /* TFFaceTrainerErrorManager.mm in Sources */,
+				D97421F82378F8EA00393C97 /* InternalFunctions.swift in Sources */,
+				D955B455237FAC64001CA868 /* TensorFlowLite.swift in Sources */,
 				D92F05D92367744100451479 /* TFFaceRecognizerLiveErrorManager.m in Sources */,
-				D92F05D22367744100451479 /* TFObjectDetection.mm in Sources */,
+				D955B457237FAC64001CA868 /* Interpreter.swift in Sources */,
+				D92F05D22367744100451479 /* CaffeDetection.mm in Sources */,
 				D92F05DA2367744100451479 /* TFFaceRecognizerLive.mm in Sources */,
+				D9847954236AF7830065D9CE /* TextRecognition.swift in Sources */,
+				D955B451237FAC64001CA868 /* InterpreterOptions.swift in Sources */,
+				D974220723793B5E00393C97 /* CaffeCamera.swift in Sources */,
 				D92F05C62367744100451479 /* ObjectDetection.mm in Sources */,
+				D91C4BC72383C8E3008093BE /* ObjectTracker.mm in Sources */,
 				D9813ACC236A22E100AF82F5 /* CVPixelBufferExtension.swift in Sources */,
 				D9813AD0236A237300AF82F5 /* UIColorExtension.swift in Sources */,
+				D9E449F82375E3FB007595CB /* TesseractWrapper.swift in Sources */,
 				D9813AC1236A211E00AF82F5 /* Interpreter.swift in Sources */,
 				D92F05CB2367744100451479 /* Test.swift in Sources */,
 				D92F05BE2367744100451479 /* OpenCVData.mm in Sources */,
+				D955B453237FAC64001CA868 /* Model.swift in Sources */,
 				D92F05D62367744100451479 /* TFFaceRecognizerErrorManager.mm in Sources */,
 				D9813ABE236A211E00AF82F5 /* Tensor.swift in Sources */,
+				D955B454237FAC64001CA868 /* Tensor.swift in Sources */,
 				D92F05C32367744100451479 /* TFFaceRecognition.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -810,10 +1002,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CCA5EE657A2A4D87BC06C026 /* Pods-ThinkerFarm.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3S6P2YEDXL;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -822,6 +1014,8 @@
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/OpenCV",
+					"$(inherited)",
+					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/TensorFlow/TensorFlowLiteC/Frameworks",
 				);
 				GCC_PREFIX_HEADER = "ThinkerFarm-Prefix.pch";
@@ -837,12 +1031,18 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/OpenCV",
 				);
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.erkansirin.ThinkerFarm;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -851,10 +1051,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 13A4EF3662CCCD1745BBC57D /* Pods-ThinkerFarm.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3S6P2YEDXL;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -863,6 +1063,8 @@
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/OpenCV",
+					"$(inherited)",
+					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/TensorFlow/TensorFlowLiteC/Frameworks",
 				);
 				GCC_PREFIX_HEADER = "ThinkerFarm-Prefix.pch";
@@ -878,10 +1080,17 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/OpenCV",
 				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.erkansirin.ThinkerFarm;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
