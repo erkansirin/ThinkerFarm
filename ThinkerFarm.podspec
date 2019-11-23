@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ThinkerFarm"
-  spec.version      = "1.0.3"
+  spec.version      = "1.0.4"
   spec.summary      = "Deep Learning Computer Vision Framework iOS."
 
   # This description is used to generate tags and improve search results.
@@ -85,10 +85,9 @@ Pod::Spec.new do |spec|
   spec.public_header_files = "ThinkerFarm.framework/Headers/*.h"
   spec.source_files = "ThinkerFarm.framework/Headers/*.h"
   spec.vendored_frameworks = "ThinkerFarm.framework"
-  spec.swift_version = "4.2"
-  spec.dependency 'SwiftyTesseract', '~> 2.0'
-  spec.dependency 'TensorFlowLiteSwift'
-  
+  spec.swift_version = "5"
+
+
 
 
 
